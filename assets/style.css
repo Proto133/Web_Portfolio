@@ -1,4 +1,6 @@
     body {
-        background-image: url(./images/Px2\ Background.png);
+        background: #a3a3a3;
+        background: -webkit-linear-gradient(to right, #080808, #554961, #c695fa, #faf0ff, #FFFFFF, #FFFFFF, #faf0ff, #c695fa, #554961, #080808);
+        background: linear-gradient(to right, #080808, #554961, #c695fa, #faf0ff, #FFFFFF, #FFFFFF, #faf0ff, #c695fa, #554961, #080808);
         background-size: 100%;
     }
