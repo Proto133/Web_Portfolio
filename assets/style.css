@@ -1,6 +1,130 @@
-    body {
-        background: #a3a3a3;
-        background: -webkit-linear-gradient(to right, #080808, #554961, #c695fa, #faf0ff, #FFFFFF, #FFFFFF, #faf0ff, #c695fa, #554961, #080808);
-        background: linear-gradient(to right, #080808, #554961, #c695fa, #faf0ff, #FFFFFF, #FFFFFF, #faf0ff, #c695fa, #554961, #080808);
-        background-size: 100%;
+body {
+    background: #d6d6d6;
+    /* background: -webkit-linear-gradient(to right, #080808, #554961, #c695fa, #faf0ff, #FFFFFF, #FFFFFF, #faf0ff, #c695fa, #554961, #080808);
+        background: linear-gradient(42deg, rgba(2, 0, 36, 1) 9%, rgba(167, 13, 177, 1) 11%, rgba(0, 0, 0, 1) 13%, rgba(0, 212, 255, 1) 15%, rgba(0, 0, 0, 1) 18%, rgba(0, 0, 0, 1) 25%, rgba(255, 255, 255, 1) 100%);
+        background-repeat: no-repeat;
+        background-size: 100%; */
+}
+
+
+/* .frost {
+        box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.9);
+        filter: blur(500));
     }
+     */
+
+#flexbox {
+    display: flex;
+    background-image: url('/assets/images/Banner.png');
+    flex: 0 2 200%;
+    background-size: cover;
+}
+
+.headerbg {
+    height: inherit;
+}
+
+header {
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    flex: 1 1 200%;
+}
+
+header h1 {
+    display: inline-flex;
+    font-size: 48px;
+    color: #ffffff;
+}
+
+header u {
+    color: #a200ff;
+    text-decoration: none;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Roboto Thin', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    display: inline-flex;
+    flex: 1 1 200%;
+}
+
+nav ul {
+    border: 1px solid rgb(212, 20, 20);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    flex: 1 1 200%;
+    margin-left: 25px;
+}
+
+#item1 {
+    flex-shrink: 1;
+    order: 1;
+    min-width: 25%;
+}
+
+#item2 {
+    flex-shrink: 1;
+    order: 2;
+    min-width: 25%;
+}
+
+#item3 {
+    flex-shrink: 1;
+    order: 3;
+    min-width: 25%;
+    margin-right: 5%;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 3em 1.5em;
+}
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 1700px) {
+    /* styles for MacBook Pro-sized screens and larger */
+    #flexbox {
+        display: flex;
+        background-image: url('/assets/images/Banner 1700.png');
+        flex: 0 2 200%;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1280) {
+    /* styles for wide screens */
+    #flexbox {
+        display: flex;
+        background-image: url('/assets/images/Banner 1280.png');
+        flex: 0 2 200%;
+        background-size: cover;
+    }
+    @media only screen and (max-width: 768px) {
+        /* styles for narrow screens */
+        #flexbox {
+            display: flex;
+            background-image: url('/assets/images/Banner\ 768.png');
+            flex: 0 2 200%;
+            background-size: cover;
+        }
+    }
+}
