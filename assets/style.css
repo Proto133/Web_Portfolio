@@ -100,31 +100,22 @@ nav a {
 
 /* Media Queries */
 
-@media only screen and (min-width: 1700px) {
-    /* styles for MacBook Pro-sized screens and larger */
+@media only screen and (max-width: 1280) {
+    /* styles for wide screens */
     #flexbox {
         display: flex;
-        background-image: url('/assets/images/Banner 1700.png');
+        background-image: url('/assets/images/Banner-1280.png');
         flex: 0 2 200%;
         background-size: cover;
     }
 }
 
-@media only screen and (min-width: 1280) {
-    /* styles for wide screens */
+@media only screen and (max-width: 768px) {
+    /* styles for narrow screens */
     #flexbox {
         display: flex;
-        background-image: url('/assets/images/Banner 1280.png');
+        background-image: url('/assets/images/Banner-768.png');
         flex: 0 2 200%;
         background-size: cover;
-    }
-    @media only screen and (max-width: 768px) {
-        /* styles for narrow screens */
-        #flexbox {
-            display: flex;
-            background-image: url('/assets/images/Banner\ 768.png');
-            flex: 0 2 200%;
-            background-size: cover;
-        }
     }
 }
