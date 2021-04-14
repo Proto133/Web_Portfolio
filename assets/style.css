@@ -90,11 +90,31 @@ ul li a {
     text-decoration: none;
 }
 
+
+/*Main Section -- Everything under the <header>*/
+
 .main {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 3em 1.5em;
 }
+
+
+/* CARD attricbutes*/
+
+.flex1 {}
+
+#about {}
+
+.cardbg {}
+
+.card-header {}
+
+.card-body {}
+
+.card-cont {}
+
+.card-footer {}
 
 
 /* Media Queries */
