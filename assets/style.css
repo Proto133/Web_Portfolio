@@ -1,9 +1,9 @@
 body {
     background: #d6d6d6;
-    /* background: -webkit-linear-gradient(to right, #080808, #554961, #c695fa, #faf0ff, #FFFFFF, #FFFFFF, #faf0ff, #c695fa, #554961, #080808);
-        background: linear-gradient(42deg, rgba(2, 0, 36, 1) 9%, rgba(167, 13, 177, 1) 11%, rgba(0, 0, 0, 1) 13%, rgba(0, 212, 255, 1) 15%, rgba(0, 0, 0, 1) 18%, rgba(0, 0, 0, 1) 25%, rgba(255, 255, 255, 1) 100%);
-        background-repeat: no-repeat;
-        background-size: 100%; */
+    background: -webkit-linear-gradient(to right, #080808, #554961, #c695fa, #faf0ff, #FFFFFF, #FFFFFF, #faf0ff, #c695fa, #554961, #080808);
+    background: linear-gradient(42deg, rgb(0, 0, 0) 9%, rgb(0, 0, 0) 11%, rgba(0, 0, 0, 1) 13%, rgb(57, 57, 57) 15%, rgba(0, 0, 0, 1) 18%, rgba(0, 0, 0, 1) 25%, rgba(255, 255, 255, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 header {
@@ -19,20 +19,22 @@ header {
 .headerbg {
     height: inherit;
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-image: url('/assets/images/Banner-1280.png');
     background-size: cover;
 }
 
 .wpmain {
-    flex: 0 2 50%;
+    flex: 0 1 55%;
     font-variant: small-caps;
     font-size: 48px;
     color: #ffffff;
 }
 
 nav {
-    flex: 2 2 10%;
+    flex: 2 3 100%;
+    align-self: center;
+    text-align: center;
 }
 
 
@@ -45,16 +47,18 @@ ul li a {
     text-decoration: none;
 }
 
+
+/*Nav item properties*/
+
 .pglinks {
     list-style: none;
     padding: .5em;
     min-width: 80%;
     display: inline-flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-end;
-    justify-content: space-evenly;
+    border-radius: 5px;
 }
 
 
@@ -62,25 +66,19 @@ ul li a {
 
 #navabout {
     order: 1;
-    flex: 0 1 30%;
-    /* align-self: center; */
-    border: 1px solid magenta;
-    background: linear-gradient(35deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 0, 174, .1) 70%, rgba(255, 0, 174, .75) 90%);
+    flex: 0 1 33%;
+    background: linear-gradient(35deg, rgba(255, 255, 255, 0.05) 0%, rgba(12, 0, 8, 0.25) 70%, rgba(255, 0, 174, .5) 90%);
 }
 
 #navwork {
     order: 2;
-    flex: 0 1 30%;
-    /* align-self: center; */
-    border: 1px solid magenta;
+    flex: 0 1 33%;
     background: linear-gradient(rgb(0, 0, 0, .25) 0%, rgba(0, 0, 0, 1) 90%);
 }
 
 #navcontact {
     order: 3;
-    flex: 0 0 30%;
-    /* align-self: flex-end; */
-    border: 1px solid magenta;
+    flex: 0 0 32%;
     background: linear-gradient(35deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.75) 50%, rgb(0, 0, 0, .9)100%);
 }
 
@@ -88,7 +86,7 @@ ul li a {
 /* Transitions on hover */
 
 .pglinks:hover {
-    color: #ffffff;
+    color: chartreuse;
     text-decoration: none;
 }
 
@@ -113,17 +111,29 @@ ul li a {
         background-image: url('/assets/images/Banner-768.png');
         background-size: cover;
     }
+    header {
+        padding: 10px;
+    }
+    .wpmain {
+        -webkit-text-stroke: 2px black;
+    }
     .pglinks {
-        display: inline-flex;
-        justify-self: center;
-        align-self: center;
-        align-items: center;
-        align-items: center;
-        justify-content: space-evenly;
-        flex: 0 2 100%;
+        min-width: 90%;
+        justify-content: space-between;
+        text-align: center;
+    }
+    #navabout,
+    #navwork,
+    #navcontact {
+        border-radius: 8px;
+        border: .5px solid rgba(255, 0, 174, .75);
+        margin: 1px;
+        display: inline;
+    }
+    nav {
+        text-align: unset;
     }
     nav ul {
-        border: 1px solid rgb(212, 20, 20);
         list-style: none;
         margin-top: 0%;
         padding: 0%;
