@@ -6,12 +6,12 @@ The HTML and CSS found in this repository have been created, edited, and revised
 ## Screenshot & Link to Live Page
 
 [Link to Peter Roto's Web Portfolio](https://proto133.github.io/WebPortfolio)  
-<a href="github.com/proto133/WebPortfolio/assets/images/Webportfolio1280.png" target=_blank>
+<a href="https://github.com/Proto133/Web_Portfolio/blob/main/assets/images/WebPortfolio1280.png" target=_blank>
 <img src="assets/images/WebPortfolio1280.png" style="max-width:500px;" alt="Screenshot of Web Portfolio at desktop resolution"/>
 </a>
 <br>
 <br>
-<a href="github.com/proto133/WebPortfolio/assets/images/Webportfolio768.png" target=_blank>
+<a href="https://github.com/Proto133/Web_Portfolio/blob/main/assets/images/WebPortfolio768.png" target=_blank>
 <img src="assets/images/WebPortfolio768.png" style="max-width:500px;" alt="Screenshot of Web Portfolio at mobile resolution"/>
 </a>
 
