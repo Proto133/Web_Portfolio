@@ -14,7 +14,7 @@
     <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.png" />
 </head>
 
-<body>
+<body id="top">
     <header class="header">
         <a href="#default" class="wpmain">Welcome to my web portfolio</a>
         <!--Navigation Menu List-->
@@ -48,42 +48,50 @@
 
                 <!-- grid item, containing a card -->
                 <div class="item-1">
-
-                    <a href="https://proto133.github.io/CSS_CheatSheet/" class="card" target="_blank">
-                        <div class="thumb">
-                            <img src="./assets/images/CSSCheatsheet.png" alt="Beautiful example of a clean grid layout and impeccable color choices." />
-                        </div>
-                        <article class=proj1>
-                            <h1>CSS Snippet Cheatsheet</h1>
-                            <span>This is a single page with a responsive flexbox layout and clean animations and transitions.</span>
-                        </article>
-                    </a>
+                    <div class="tooltip">
+                        <a href="https://proto133.github.io/CSS_CheatSheet/" class="card" target="_blank">
+                            <div class="thumb">
+                                <img src="./assets/images/CSSCheatsheet.png" alt="Beautiful example of a clean grid layout and impeccable color choices." />
+                            </div>
+                            <span class="tooltiptext">Visit Deployed Project</span>
+                            <article class=proj1>
+                                <h1>CSS Snippet Cheatsheet</h1>
+                                <span class="projsummary">This is a single page with a responsive flexbox layout and clean animations and transitions.</span>
+                            </article>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- grid item, containing a card -->
                 <div class="item-2">
-                    <a href="https://proto133.github.io/01-Homework-Html-CSS/" class="card" target="_blank">
-                        <div class="thumb">
-                            <img class="thumb" src="./assets/images/Refactor Project.png" alt="Snippet of the very clean and commented CSS code from the projecy" />
-                        </div>
-                        <article>
-                            <h1> Throrough Code Refactoring</h1>
-                            <span>This project is a wonderful example of my abilities to take existing code and clean it up to comply with Web Accessibility Standards and Practices, while maintaining functionality and aesthetics.</span>
-                        </article>
-                    </a>
+                    <div class="tooltip">
+                        <a href="https://proto133.github.io/01-Homework-Html-CSS/" class="card" target="_blank">
+                            <div class="thumb">
+                                <img class="thumb" src="./assets/images/Refactor Project.png" alt="Snippet of the very clean and commented CSS code from the projecy" />
+                            </div>
+                            <span class="tooltiptext">Visit Deployed Project</span>
+                            <article>
+                                <h1> Throrough Code Refactoring</h1>
+                                <span class="projsummary">This project is a wonderful example of my abilities to take existing code and clean it up to comply with Web Accessibility Standards and Practices, while maintaining functionality and aesthetics.</span>
+                            </article>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- grid item, containing a card -->
                 <div class="item-3">
-                    <a href="https://proto133.github.io/prework-about-me/" class="card" target="_blank">
-                        <div class="thumb">
-                            <img class="thumb" src="assets/images/Aboutme.png" alt="Very basic but clean looking 'About Me' webpage">
-                        </div>
-                        <article>
-                            <h1>About Me</h1>
-                            <span>This project shows the very basic abilities of deploying a webpage successfully. This is a good template that can be scaled as needed.</span>
-                        </article>
-                    </a>
+                    <div class="tooltip">
+                        <a href="https://proto133.github.io/prework-about-me/" class="card" target="_blank">
+                            <div class="thumb">
+                                <img class="thumb" src="assets/images/Aboutme.png" alt="Very basic but clean looking 'About Me' webpage">
+                            </div>
+                            <span class="tooltiptext">Visit Deployed Project</span>
+                            <article>
+                                <h1>About Me</h1>
+                                <span class="projsummary">This project shows the very basic abilities of deploying a webpage successfully. This is a good template that can be scaled as needed.</span>
+                            </article>
+                        </a>
+                    </div>
                 </div>
         </section>
         <section class="normal" id="contact">
@@ -94,21 +102,37 @@
             <div class=content>
                 <ul>
                     <li>
-                        <a href="tel:8478757196" target="_top"><img src="assets/images/baseline_call_black_48dp.png" alt="Google's Material Icon for phonecall"> Phone</a>
+                        <div class="tooltip">
+                            <a href="tel:8478757196" target="_top"><img src="assets/images/baseline_call_black_48dp.png" alt="Google's Material Icon for phonecall"> Phone</a>
+                            <span class="tooltiptext">Call Me</span>
+                        </div>
                     </li>
                     <li>
-                        <a href="http://www.github.com/proto133" target="_blank"><img src="./assets/images/github.png" alt="Flat icon for the website Github"> Github</a>
+                        <div class="tooltip">
+                            <a href="http://www.github.com/proto133" target="_blank"><img src="./assets/images/github.png" alt="Flat icon for the website Github"> Github</a>
+                            <span class="tooltiptext">Visit my Github Repo</span>
+                        </div>
                     </li>
                     <li>
-                        <a href="mailto:peterdroto@gmail.com" target="_blank"><img src="./assets/images/baseline_email_black_48dp.png" alt="Google's Material Icon for Email"> eMail</a>
+                        <div class="tooltip">
+                            <a href="mailto:peterdroto@gmail.com" target="_blank"><img src="./assets/images/baseline_email_black_48dp.png" alt="Google's Material Icon for Email"> eMail</a>
+                            <span class="tooltiptext">Send Me an eMail</span>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
-    <footer>
-        <h3>Made with </h3>
+
+
+    <footer class="cntr">
+        <a class="tooltip" href="#top">
+        Made with ♥ by Peter Roto
+        <span class="tooltiptext">Jump back up to the top!</span>
+    </a>
     </footer>
+
+
 </body>
 
 </html>
