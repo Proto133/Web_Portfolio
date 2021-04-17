@@ -6,9 +6,9 @@ The HTML and CSS found in this repository have been created, edited, and revised
 ## Screenshot & Link to Live Page
 [Link to Peter Roto's Web Portfolio](https://proto133.github.io/WebPortfolio)  
 
-![Screenshot of Web Portfolio at desktop resolution](assets/images/WebPortfolio1280.png)
+![Screenshot of Web Portfolio at desktop resolution](assets/images/WebPortfolio1280.png=300x300)
 
-![Screenshot of Web Portfolio at mobile resolution](assets/images/WebPortfolio768.png)
+![Screenshot of Web Portfolio at mobile resolution](assets/images/WebPortfolio768.png=300x300)
 ---
 
 ## Works Cited:  
