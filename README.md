@@ -4,12 +4,20 @@ This project is an example template for my future professional web portfolio. It
 The HTML and CSS found in this repository have been created, edited, and revised by Peter Roto in an attempt to 
 
 ## Screenshot & Link to Live Page
+
 [Link to Peter Roto's Web Portfolio](https://proto133.github.io/WebPortfolio)  
+<a href="github.com/proto133/WebPortfolio/assets/images/Webportfolio1280.png" target=_blank>
+<img src="assets/images/WebPortfolio1280.png" style="max-width:500px;" alt="Screenshot of Web Portfolio at desktop resolution"/>
+</a>
+<br>
+<br>
+<a href="github.com/proto133/WebPortfolio/assets/images/Webportfolio768.png" target=_blank>
+<img src="assets/images/WebPortfolio768.png" style="max-width:500px;" alt="Screenshot of Web Portfolio at mobile resolution"/>
+</a>
 
-![Screenshot of Web Portfolio at desktop resolution](assets/images/WebPortfolio1280.png=300x300)
 
-![Screenshot of Web Portfolio at mobile resolution](assets/images/WebPortfolio768.png=300x300)
 ---
+
 
 ## Works Cited:  
 Github icon : https://github.com/edent/SuperTinyIcons
