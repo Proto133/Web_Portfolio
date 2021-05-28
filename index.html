@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/CSS" href="./assets/css/style.css">
     <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.png" />
+    <script defer type="text/javascript" src="./assets/js/script.js"></script>
 </head>
 
 <body id="top">
@@ -19,33 +20,38 @@
         <a href="#default" class="wpmain">Welcome to my web portfolio</a>
         <!--Navigation Menu List-->
         <nav class="header-right">
-            <a class="active" href="#about">About</a>
+            <a id="navAbout" class="active" href="#myModal">About</a>
             <a href="#prvwrk ">Work</a>
             <a id=cont-nav href="#contact ">Contact</a>
         </nav>
         <div id="frost"></div>
     </header>
     <main>
-        <!-- Begin Subject Cards -->
-        <section class="normal" id="about">
-            <h1>About Me</h1>
-            <aside>
-                <a href="https://www.linkedin.com/in/peterroto" target="_blank">
-                    <img id="propic" src="./assets/images/Ntbg.png" alt="Peter Roto's Profile Picture" />
-                </a>
-            </aside>
-            <div class=content>
-                <p> As can be seen, my name is Peter Roto. I'm a very driven individual who understands the value derived from helping others. <br><br>My resume may seem a random array of disconnected duties and jobs, but on the contrary, it is a great depiction
-                    of the intrinsic drive to share my unique multifaceted skillset with as many people as possible.
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <section id="about">
+                    <h1>About Me</h1>
+                    <aside class="about">
+                        <a href="https://www.linkedin.com/in/peterroto" target="_blank">
+                            <img id="propic" src="./assets/images/Ntbg.png" alt="Peter Roto's Profile Picture" />
+                        </a>
+                    </aside>
+                    <div class=content>
+                        <p> As can be seen, my name is Peter Roto. I'm a very driven individual who understands the value derived from helping others. <br><br>My resume may seem a random array of disconnected duties and jobs, but on the contrary, it is a
+                            great depiction of the intrinsic drive to share my unique multifaceted skillset with as many people as possible.
 
-                </p>
+                        </p>
+                    </div>
+                    <span class="close">&times; Close</span>
+                </section>
             </div>
-        </section>
+        </div>
         <!-- Previous Work Grid Set -->
         <section id="prvwrk">
             <h1>Previous Work</h1>
             <div class="wrkgrid">
-
                 <!-- grid item, containing a card -->
                 <div class="item-1">
                     <div class="tooltip">
@@ -93,6 +99,37 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- grid item, containing a card -->
+                <div class="item-3">
+                    <div class="tooltip">
+                        <a href="https://proto133.github.io/prework-about-me/" class="card" target="_blank">
+                            <div class="thumb">
+                                <img class="thumb" src="assets/images/Aboutme.png" alt="Very basic but clean looking 'About Me' webpage">
+                            </div>
+                            <span class="tooltiptext">Visit Deployed Project</span>
+                            <article>
+                                <h1>About Me</h1>
+                                <span class="projsummary">This project shows the very basic abilities of deploying a webpage successfully. This is a good template that can be scaled as needed.</span>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+                <!-- grid item, containing a card -->
+                <div class="item-3">
+                    <div class="tooltip">
+                        <a href="https://proto133.github.io/prework-about-me/" class="card" target="_blank">
+                            <div class="thumb">
+                                <img class="thumb" src="assets/images/Aboutme.png" alt="Very basic but clean looking 'About Me' webpage">
+                            </div>
+                            <span class="tooltiptext">Visit Deployed Project</span>
+                            <article>
+                                <h1>About Me</h1>
+                                <span class="projsummary">This project shows the very basic abilities of deploying a webpage successfully. This is a good template that can be scaled as needed.</span>
+                            </article>
+                        </a>
+                    </div>
+                </div>
         </section>
         <section class="normal" id="contact">
             <h1>Contact Info</h1>
@@ -125,11 +162,13 @@
     </main>
     <footer class="cntr">
         <a class="tooltip" href="#top">
-        Made with ♥ by Peter Roto
-        <span class="tooltiptext">Jump back up to the top!</span>
+      Made with ♥ by Peter Roto
+      <span class="tooltiptext">Jump back up to the top!</span>
     </a>
     </footer>
 
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 </body>
 
