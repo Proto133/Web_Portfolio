@@ -1,753 +1,758 @@
-    /* Start of CSS*/
-    
-    body {
-        background: #d6d6d6;
-        background: -webkit-linear-gradient(170deg, hsla(282, 100%, 7%, 1) 0%, hsla(283, 99%, 64%, 1) 10%, hsla(283, 90%, 68%, 0.9) 15%, hsla(282, 71%, 74%, 0.7) 22%, hsla(283, 36%, 80%, 0.8) 30%, hsla(105, 11%, 85%, 0.9) 36%, hsla(0, 0%, 100%, 1) 100%);
-        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1A0025", endColorstr="#CA48FE", GradientType=1);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    .modal {
-        display: none;
-        /* Hidden by default */
-        position: fixed;
-        /* Stay in place */
-        z-index: 1;
-        /* Sit on top */
-        padding-top: 100px;
-        /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%;
-        /* Full width */
-        height: 100%;
-        /* Full height */
-        overflow: auto;
-    }
-    /* The Close Button */
-    
-    .close {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-    
-    .close:hover,
-    .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
-    .header {
-        position: absolute;
-        top: 0;
-        width: 96%;
-        margin: 0 3% 1% 0;
-        background: linear-gradient(to right, hsla(0, 0%, 100%, 1) 28%, hsla(0, 0%, 100%, 0.025) 64%, hsla(293, 87%, 75%, 0.05) 77%, hsla(293, 100%, 46%, 0.1) 86%, hsla(0, 0%, 0%, .25) 100%);
-        /* border-bottom: 1px solid black; */
-        padding: 0 .5vw;
-        box-shadow: 0px 9px 10px -11px rgba(0, 0, 0, 0.64);
-        -webkit-box-shadow: 0px 9px 10px -11px rgba(0, 0, 0, 0.64);
-        -moz-box-shadow: 0px 9px 10px -11px rgba(0, 0, 0, 0.64);
-    }
-    
-    .header .wpmain {
-        font-size: XX-Large;
-        font-variant: small-caps;
-        font-weight: bold;
-        color: #0c0c0c;
-    }
-    
-    .wpmain:hover {
-        box-shadow: inset -1px -1px 1px rgba(232, 102, 236, 1), 0 5px 20px rgb(0, 0, 0);
-        border-radius: 8px;
-        transition: all 0.5s ease-in-out;
-    }
-    
-    .header a {
-        float: left;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        padding: 12px;
-        text-decoration: none;
-        font-size: x-large;
-        font-weight: 500;
-        -webkit-text-stroke: .5px rgb(36, 36, 36);
-        line-height: 25px;
-        border-radius: 4px;
-    }
-    
-    .header-right {
-        float: right;
-    }
-    
-    .header-right a:hover {
-        background-color: rgba(255, 255, 255, .15);
-        text-decoration: underline;
-        border-radius: 8px;
-        transition: all 0.75s ease-in-out;
-    }
-    
-    header a.active {
-        border-left: 1px solid black;
-        border-radius: 0;
-    }
-    /*Main Section -- Everything under the <header>*/
-    
-    main {
-        max-width: 100%;
-        margin: 5em auto;
-        padding: 0 2% 1.5em;
-        /* box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); */
-        Font-family: 'Roboto', sans-serif;
-    }
-    /*Keeping consistent header look and spacing*/
-    
-    section h1,
-    section.normal h1 {
-        font-size: x-large;
-        font-family: 'roboto', sans-serif;
-        margin-left: 1em;
-    }
-    /* sections pertains to About Me and Contact*/
-    
-    #about {
-        background-color: rgba(0, 0, 0, 0.8);
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr;
-        gap: 20px;
-        color: white;
-        box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.5);
-        margin: 1em;
-        border-top-left-radius: 5vw;
-        border-top-right-radius: 5vw;
-        border-bottom-right-radius: 4vw;
-        border-bottom-left-radius: 4vw;
-    }
-    
-    .close {
-        color: black;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        background-color: hsla(283, 99%, 64%, 1);
-        text-align: center;
-        border-bottom-right-radius: 5vw;
-        border-bottom-left-radius: 5vw;
-    }
-    
-    section.normal {
-        background-color: rgba(0, 0, 0, 0.1);
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr;
-        gap: 20px;
-        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
-        margin: 1em;
-    }
-    
-    .about {
-        border-right: 1px solid rgb(255, 255, 255);
-        grid-column-start: 1;
-        grid-column-end: 1;
-        padding: 5%
-    }
-    
-    aside {
-        border-right: 1px solid rgb(0, 0, 0);
-        grid-column-start: 1;
-        grid-column-end: 1;
-        padding: 5%
-    }
-    
-    aside img {
-        border-radius: 20px;
-        box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.25);
-        margin: 10% 5%;
-        height: 80%;
-        width: 90%;
-    }
-    
-    .content {
-        font-family: 'Roboto Thin', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 500;
-        font-size: x-large;
-        padding: 5%;
-        margin-top: -5%;
-    }
-    /* Previous Work Main Card Grid*/
-    
-    #prvwrk {
-        width: 100%;
-        /* background-color: rgba(0, 0, 0, 0.1); */
-        /* box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
-        margin: 1vh 0;
-    }
-    /* Grid spacing out previous project cards */
-    
-    .wrkgrid {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    /*Item specific grid layout*/
-    
-    .activeItem {
-        order: 1 !important;
-        flex: 0 0 60% !important;
-        margin: 0 20% !important;
-    }
-    
-    .activeItem .proj h1 {
-        font-size: 2.5vw;
-    }
-    
-    .activeItem span {
-        display: block !important;
-        font-size: 2.5vw;
-        font-weight: 200;
-        margin-top: 2vh;
-    }
-    
-    .item {
-        margin: 1vh 1%;
-        flex: 0 0 20%;
-        order: 3;
-    }
-    
-    .item .proj h1 {
-        font-size: 1.5vw;
-    }
-    
-    .item span {
-        display: none;
-    }
-    
-    .instr {
-        order: 2;
-        flex: 1 0 100%;
-        text-align: center;
-        font-size: 1vw;
-    }
-    
-    .projLink {
-        flex: 1 0 100%;
-        font-size: 1.25vw;
-        margin-left: 1vw;
-        text-decoration: none;
-    }
-    /* CARD attricbutes*/
-    
-    .card {
-        background: white;
-        text-decoration: none;
-        color: #444;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        min-height: 100%;
-        position: relative;
-        top: 0;
-        transition: all .1s ease-in;
-        padding: 2.5vh;
-    }
-    
-    .card article {
-        margin-bottom: 5vh;
-        padding: 0;
-        flex: 0 0 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    article h1 {
-        text-align: center;
-        margin: .5vh 0;
-        font-size: 1.5vw;
-    }
-    
-    div.thumb {
-        padding: 2%;
-    }
-    
-    .thumb img {
-        max-width: 100%;
-        position: relative;
-        background-size: cover;
-        background-position: center center;
-    }
-    
-    .projsummary {
-        margin-bottom: 10%;
-    }
-    /* Gives top project different spacing*/
-    
-    .proj1 {
-        margin-bottom: 5%;
-    }
-    /* Contact page styling*/
-    
-    .content ul {
-        list-style-type: none;
-        margin: -10% 0 0 0;
-    }
-    
-    #contactIcon {
-        height: 50%;
-        padding-right: 2vw;
-        margin: 25% 0 0 0;
-        float: right;
-        border-radius: 25px;
-    }
-    
-    #contact h1 {
-        flex: 1 0 20%
-    }
-    
-    #contact .content {
-        justify-content: center;
-        padding: 0 0 5vh 0;
-        flex: 1 0 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100%;
-        width: 100%;
-    }
-    
-    .content a {
-        text-decoration: none;
-        color: white;
-    }
-    
-    .content ul {
-        flex: 1 1 100%;
-        list-style-type: none;
-        width: 90%;
-        margin: 0;
-        padding: 0;
-    }
-    
-    ul img {
-        /* max-width: 70%; */
-        max-height: 95%;
-        margin-left: 30%;
-        margin-top: 15%;
-    }
-    
-    #git,
-    #email,
-    #phone {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        /* margin: 0; */
-        width: 35%;
-        border: none;
-    }
-    
-    #gitP,
-    #emailP,
-    #phoneP {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        text-decoration: none;
-    }
-    
-    #contact ul li {
-        width: 100%;
-        grid-column-start: 1;
-        grid-column-end: 5;
-        display: grid;
-        align-items: center;
-        grid-template-columns: repeat(3, 33%);
-        grid-template-rows: repeat(3, 33%);
-        background-color: rgba(0, 0, 0, .25);
-        margin: 5% 2% 0;
-        border-radius: 20px;
-        text-align: center;
-        max-width: 100%;
-    }
-    
-    li a {
-        font-family: 'Roboto', 'Segoe UI', Tahoma, Verdana, sans-serif;
-        color: white;
-        text-decoration: none;
-        line-height: 3;
-    }
-    
-    .tooltip {
-        border: none;
-    }
-    
-    li {
-        background-color: rgba(0, 0, 0, .25);
-        margin: 5% 2% 0;
-        border-radius: 20px;
-        text-align: center;
-        max-width: 60%;
-    }
-    
-    li a {
-        font-family: 'Roboto', 'Segoe UI', Tahoma, Verdana, sans-serif;
-        color: white;
-        text-decoration: none;
-        line-height: 3;
-    }
-    /*fancy transitions and animations*/
-    
-    .thumb img:hover {
-        top: -2px;
-        box-shadow: 0 10px 50px rgba(155, 0, 116, 0.438);
-    }
-    
-    .card:hover {
-        top: -2px;
-        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-    }
-    
-    li:hover {
-        top: -2px;
-        box-shadow: inset 3px 3px 5px 6px #ccc;
-    }
-    
-    li a::after {
-        font-family: 'Roboto', 'Segoe UI', Tahoma, Verdana, sans-serif;
-        color: black;
-        line-height: 1.5;
-        text-decoration: none;
-    }
-    /*Adding Tooltips to links . . . hopefully*/
-    
-    #contact .tooltip {
-        flex: 1 0 100%;
-        position: relative;
-    }
-    
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
-        /* Position the tooltip */
-        position: absolute;
-        z-index: 1;
-    }
-    
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-    }
-    /*Footer Centering*/
-    
-    .cntr {
-        width: 100%;
-        text-align: center;
-        align-content: center;
-    }
-    
-    a.tooltip {
-        text-align: center;
-        font-size: x-large;
-        height: 100%;
-    }
-    
-    @media only screen and (max-width: 768px) {
-        /* styles for narrow screens */
-        header nav {
-            display: flex;
-            margin-top: 2vh;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        .header {
-            position: unset;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-        .header .wpmain {
-            border: none;
-            border-radius: 0;
-        }
-        .header a.active {
-            border: none;
-        }
-        .header a {
-            flex: 1 1 30%;
-            font-size: 2vw;
-            float: none;
-            text-align: center;
-        }
-        .header-right {
-            float: none;
-        }
-        .work {
-            width: 90%;
-            max-width: 1240px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            grid-gap: 20px;
-        }
-        .card {
-            background: white;
-            text-decoration: none;
-            color: #444;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            max-width: 95%;
-            position: relative;
-            top: 0;
-            transition: all .1s ease-in;
-        }
-        .wrkgrid {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            /* display: grid;
+            /* Start of CSS*/
+            
+            body {
+                background: #d6d6d6;
+                background: -webkit-linear-gradient(170deg, hsla(282, 100%, 7%, 1) 0%, hsla(283, 99%, 64%, 1) 10%, hsla(283, 90%, 68%, 0.9) 15%, hsla(282, 71%, 74%, 0.7) 22%, hsla(283, 36%, 80%, 0.8) 30%, hsla(105, 11%, 85%, 0.9) 36%, hsla(0, 0%, 100%, 1) 100%);
+                filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1A0025", endColorstr="#CA48FE", GradientType=1);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                font-family: 'Roboto', sans-serif;
+            }
+            
+            .modal {
+                display: none;
+                /* Hidden by default */
+                position: fixed;
+                /* Stay in place */
+                z-index: 1;
+                /* Sit on top */
+                padding-top: 100px;
+                /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%;
+                /* Full width */
+                height: 100%;
+                /* Full height */
+                overflow: auto;
+            }
+            /* The Close Button */
+            
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            
+            .header {
+                position: absolute;
+                top: 0;
+                width: 96%;
+                margin: 0 3% 1% 0;
+                background: linear-gradient(to right, hsla(0, 0%, 100%, 1) 28%, hsla(0, 0%, 100%, 0.025) 64%, hsla(293, 87%, 75%, 0.05) 77%, hsla(293, 100%, 46%, 0.1) 86%, hsla(0, 0%, 0%, .25) 100%);
+                /* border-bottom: 1px solid black; */
+                padding: 0 .5vw;
+                box-shadow: 0px 9px 10px -11px rgba(0, 0, 0, 0.64);
+                -webkit-box-shadow: 0px 9px 10px -11px rgba(0, 0, 0, 0.64);
+                -moz-box-shadow: 0px 9px 10px -11px rgba(0, 0, 0, 0.64);
+            }
+            
+            .header .wpmain {
+                font-size: XX-Large;
+                font-variant: small-caps;
+                font-weight: bold;
+                color: #0c0c0c;
+            }
+            
+            .wpmain:hover {
+                box-shadow: inset -1px -1px 1px rgba(232, 102, 236, 1), 0 5px 20px rgb(0, 0, 0);
+                border-radius: 8px;
+                transition: all 0.5s ease-in-out;
+            }
+            
+            .header a {
+                float: left;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                font-size: x-large;
+                font-weight: 500;
+                -webkit-text-stroke: .5px rgb(36, 36, 36);
+                line-height: 25px;
+                border-radius: 4px;
+            }
+            
+            .header-right {
+                float: right;
+            }
+            
+            .header-right a:hover {
+                background-color: rgba(255, 255, 255, .15);
+                text-decoration: underline;
+                border-radius: 8px;
+                transition: all 0.75s ease-in-out;
+            }
+            
+            header a.active {
+                border-left: 1px solid black;
+                border-radius: 0;
+            }
+            /*Main Section -- Everything under the <header>*/
+            
+            main {
+                max-width: 100%;
+                margin: 5em auto;
+                padding: 0 2% 1.5em;
+                /* box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); */
+                Font-family: 'Roboto', sans-serif;
+            }
+            /*Keeping consistent header look and spacing*/
+            
+            section h1,
+            section.normal h1 {
+                font-size: x-large;
+                font-family: 'roboto', sans-serif;
+                margin-left: 1em;
+            }
+            /* sections pertains to About Me and Contact*/
+            
+            #about {
+                background-color: rgba(0, 0, 0, 0.8);
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 1fr;
+                gap: 20px;
+                color: white;
+                box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.5);
+                margin: 1em;
+                border-top-left-radius: 5vw;
+                border-top-right-radius: 5vw;
+                border-bottom-right-radius: 4vw;
+                border-bottom-left-radius: 4vw;
+            }
+            
+            .close {
+                color: black;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background-color: hsla(283, 99%, 64%, 1);
+                text-align: center;
+                border-bottom-right-radius: 5vw;
+                border-bottom-left-radius: 5vw;
+            }
+            
+            section.normal {
+                background-color: rgba(0, 0, 0, 0.1);
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 1fr;
+                gap: 20px;
+                box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+                margin: 1em;
+            }
+            
+            .about {
+                border-right: 1px solid rgb(255, 255, 255);
+                grid-column-start: 1;
+                grid-column-end: 1;
+                padding: 5%
+            }
+            
+            aside {
+                border-right: 1px solid rgb(0, 0, 0);
+                grid-column-start: 1;
+                grid-column-end: 1;
+                padding: 5%
+            }
+            
+            aside img {
+                border-radius: 20px;
+                box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.25);
+                margin: 10% 5%;
+                height: 80%;
+                width: 90%;
+            }
+            
+            .content {
+                font-family: 'Roboto Thin', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 500;
+                font-size: x-large;
+                padding: 5%;
+                margin-top: -5%;
+            }
+            /* Previous Work Main Card Grid*/
+            
+            #prvwrk {
+                width: 100%;
+                /* background-color: rgba(0, 0, 0, 0.1); */
+                /* box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
+                margin: 1vh 0;
+            }
+            /* Grid spacing out previous project cards */
+            
+            .wrkgrid {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            /*Item specific grid layout*/
+            
+            .activeItem {
+                order: 1 !important;
+                flex: 0 0 60% !important;
+                margin: 0 20% !important;
+            }
+            
+            .activeItem .proj h1 {
+                font-size: 2.5vw;
+            }
+            
+            .activeItem span {
+                display: block !important;
+                font-size: 2.5vw;
+                font-weight: 200;
+                margin-top: 2vh;
+            }
+            
+            .item {
+                margin: 1vh 1%;
+                flex: 0 0 20%;
+                order: 3;
+            }
+            
+            .item .proj h1 {
+                font-size: 1.5vw;
+            }
+            
+            .item span {
+                display: none;
+            }
+            
+            .instr {
+                order: 2;
+                flex: 1 0 100%;
+                text-align: center;
+                font-size: 1vw;
+            }
+            
+            .projLink {
+                position: absolute;
+                bottom: 2vh;
+                left: 50%;
+                width: 100%;
+                transform: translateX(-50%);
+                flex: 1 0 100%;
+                font-size: 1.25vw;
+                margin-left: 1vw;
+                text-decoration: none;
+            }
+            /* CARD attricbutes*/
+            
+            .card {
+                background: white;
+                text-decoration: none;
+                color: #444;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                min-height: 100%;
+                position: relative;
+                top: 0;
+                transition: all .1s ease-in;
+                padding: 2.5vh;
+            }
+            
+            .card article {
+                margin-bottom: 5vh;
+                padding: 0;
+                flex: 0 0 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            article h1 {
+                text-align: center;
+                margin: .5vh 0;
+                font-size: 1.5vw;
+            }
+            
+            div.thumb {
+                flex: 1 0 100%;
+                margin: 2%;
+                padding: 2%;
+            }
+            
+            .item .thumb img {
+                bottom: 0;
+                width: 100%;
+                position: relative;
+            }
+            
+            .projsummary {
+                margin-bottom: 10%;
+            }
+            /* Contact page styling*/
+            
+            .content ul {
+                list-style-type: none;
+                margin: -10% 0 0 0;
+            }
+            
+            #contactIcon {
+                height: 50%;
+                padding-right: 2vw;
+                margin: 25% 0 0 0;
+                float: right;
+                border-radius: 25px;
+            }
+            
+            #contact h1 {
+                flex: 1 0 20%
+            }
+            
+            #contact .content {
+                justify-content: center;
+                padding: 0 0 5vh 0;
+                flex: 1 0 100%;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 100%;
+                width: 100%;
+            }
+            
+            .content a {
+                text-decoration: none;
+                color: white;
+            }
+            
+            .content ul {
+                flex: 1 1 100%;
+                list-style-type: none;
+                width: 90%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            ul img {
+                /* max-width: 70%; */
+                max-height: 95%;
+                margin-left: 30%;
+                margin-top: 15%;
+            }
+            
+            #git,
+            #email,
+            #phone {
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-column-start: 1;
+                /* margin: 0; */
+                width: 35%;
+                border: none;
+            }
+            
+            #gitP,
+            #emailP,
+            #phoneP {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                text-decoration: none;
+            }
+            
+            #contact ul li {
+                width: 100%;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                display: grid;
+                align-items: center;
+                grid-template-columns: repeat(3, 33%);
+                grid-template-rows: repeat(3, 33%);
+                background-color: rgba(0, 0, 0, .25);
+                margin: 5% 2% 0;
+                border-radius: 20px;
+                text-align: center;
+                max-width: 100%;
+            }
+            
+            li a {
+                font-family: 'Roboto', 'Segoe UI', Tahoma, Verdana, sans-serif;
+                color: white;
+                text-decoration: none;
+                line-height: 3;
+            }
+            
+            .card .tooltip {
+                flex: 1 0 100%;
+                /* border: 1px solid black; */
+            }
+            
+            li {
+                background-color: rgba(0, 0, 0, .25);
+                margin: 5% 2% 0;
+                border-radius: 20px;
+                text-align: center;
+                max-width: 60%;
+            }
+            
+            li a {
+                font-family: 'Roboto', 'Segoe UI', Tahoma, Verdana, sans-serif;
+                color: white;
+                text-decoration: none;
+                line-height: 3;
+            }
+            /*fancy transitions and animations*/
+            
+            .thumb img:hover {
+                top: -2px;
+                box-shadow: 0 10px 50px rgba(155, 0, 116, 0.438);
+            }
+            
+            .card:hover {
+                top: -2px;
+                box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+            }
+            
+            li:hover {
+                top: -2px;
+                box-shadow: inset 3px 3px 5px 6px #ccc;
+            }
+            
+            li a::after {
+                font-family: 'Roboto', 'Segoe UI', Tahoma, Verdana, sans-serif;
+                color: black;
+                line-height: 1.5;
+                text-decoration: none;
+            }
+            /*Adding Tooltips to links . . . hopefully*/
+            
+            #contact .tooltip {
+                flex: 1 0 100%;
+                position: relative;
+            }
+            
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: fit-content;
+                background-color: rgba(0, 0, 0, .25);
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                /* Position the tooltip */
+                position: absolute;
+                left: 70%;
+                transform: translateX(-50%);
+                bottom: 5%;
+                z-index: 1;
+            }
+            
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+            /*Footer Centering*/
+            
+            .cntr {
+                width: 100%;
+                text-align: center;
+                align-content: center;
+            }
+            
+            a.tooltip {
+                text-align: center;
+                font-size: x-large;
+                height: 100%;
+            }
+            
+            @media only screen and (max-width: 768px) {
+                /* styles for narrow screens */
+                header nav {
+                    display: flex;
+                    margin-top: 2vh;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                .header {
+                    position: unset;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                }
+                .header .wpmain {
+                    border: none;
+                    border-radius: 0;
+                }
+                .header a.active {
+                    border: none;
+                }
+                .header a {
+                    flex: 1 1 30%;
+                    font-size: 2vw;
+                    float: none;
+                    text-align: center;
+                }
+                .header-right {
+                    float: none;
+                }
+                .work {
+                    width: 90%;
+                    max-width: 1240px;
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                    grid-gap: 20px;
+                }
+                .card {
+                    background: white;
+                    text-decoration: none;
+                    color: #444;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 95%;
+                    /* position: relative; */
+                    top: 0;
+                    transition: all .1s ease-in;
+                }
+                .wrkgrid {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    /* display: grid;
             gap: 1em;
             margin-bottom: 0%; */
-        }
-        .item-1 {
-            flex: 1 0 90%;
-            margin-left: 5%;
-        }
-        .item {
-            margin-top: 2vh;
-            margin-left: 2.5%;
-            flex: 1 1 30%;
-        }
-        .item-3 {
-            margin: 0;
-            width: 275;
-        }
-        img.thumb {
-            max-width: 100%;
-            min-height: 0;
-            margin: 1% 1%;
-        }
-        .projsummary {
-            font-size: 16px;
-        }
-        span {
-            margin: 0 0 10% 0;
-        }
-        #contactIcon {
-            height: 50%;
-            padding-right: 2vw;
-            margin: 25% 0 0 0;
-            float: right;
-            border-radius: 25px;
-        }
-        #contact h1 {
-            flex: 1 0 20%
-        }
-        #contact .content {
-            justify-content: center;
-            padding: 0 0 5vh 0;
-            flex: 1 0 100%;
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 100%;
-            width: 100%;
-        }
-        .content a {
-            text-decoration: none;
-            color: white;
-        }
-        .content ul {
-            flex: 1 1 100%;
-            list-style-type: none;
-            width: 90%;
-            margin: 0;
-            padding: 0;
-        }
-        ul img {
-            /* max-width: 70%; */
-            max-height: 95%;
-            margin-left: 30%;
-            margin-top: 15%;
-        }
-        #git,
-        #email,
-        #phone {
-            grid-row-start: 1;
-            grid-row-end: 3;
-            grid-column-start: 1;
-            /* margin: 0; */
-            /* width: 100%; */
-            border: none;
-        }
-        #gitP,
-        #emailP,
-        #phoneP {
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            text-decoration: none;
-        }
-        #contact ul li {
-            width: 100%;
-            grid-column-start: 1;
-            grid-column-end: 5;
-            display: grid;
-            align-items: center;
-            grid-template-columns: repeat(3, 33%);
-            grid-template-rows: repeat(3, 33%);
-            background-color: rgba(0, 0, 0, .25);
-            margin: 5% 2% 0;
-            border-radius: 20px;
-            text-align: center;
-            max-width: 100%;
-        }
-        li a {
-            font-family: 'Roboto', 'Segoe UI', Tahoma, Verdana, sans-serif;
-            color: white;
-            text-decoration: none;
-            line-height: 3;
-        }
-        .tooltip {
-            border: none;
-        }
-    }
-    
-    @media only screen and (max-width:500px) {
-        /*work grid*/
-        .activeItem article {
-            display: flex;
-            justify-content: center;
-        }
-        .activeItem h1 {
-            font-size: 3vw;
-        }
-        .activeItem span {
-            font-size: 2.5vw;
-        }
-        .activeItem a {
-            margin-left: 25% !important;
-        }
-        .item-1 {
-            flex: 1 0 90%;
-            margin-left: 5%;
-        }
-        .item {
-            margin-top: 2vh;
-            margin-left: 0;
-            flex: 0 1 45%;
-        }
-        .item h1 {
-            font-size: 3vw;
-        }
-        article {
-            display: flex;
-            justify-content: center;
-        }
-        a.projLink {
-            width: 90%;
-            margin-left: 12.5%;
-            margin-bottom: 2vh;
-        }
-        /* Contact Card */
-        #contact {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            padding-bottom: 2vh;
-        }
-        #contact aside {
-            flex: 0 1 30%;
-            padding: 1vh 0 0 0;
-            background-color: white;
-        }
-        #contactIcon {
-            width: 15vw;
-            padding-right: 5vw;
-            margin: 0;
-            float: right;
-            border-radius: 2px;
-        }
-        #contact h1 {
-            flex: 1 0 20%
-        }
-        #contact .content {
-            justify-content: center;
-            padding: 0;
-            flex: 1 0 100%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-        .content a {
-            text-decoration: none;
-            color: white;
-        }
-        .content ul {
-            flex: 1 1 100%;
-            list-style-type: none;
-            /* width: 100%; */
-            margin: 0;
-            padding: 0 0 0 5%;
-        }
-        ul img {
-            max-width: 70%;
-            max-height: 95%;
-            margin-left: 15%;
-            margin-top: 5%;
-        }
-        #git,
-        #email,
-        #phone {
-            grid-row-start: 1;
-            grid-row-end: 3;
-            grid-column-start: 1;
-            /* margin: 0; */
-            /* width: 100%; */
-            border: none;
-        }
-        #gitP,
-        #emailP,
-        #phoneP {
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            text-decoration: none;
-        }
-        li {
-            display: grid;
-            align-items: center;
-            grid-template-columns: repeat(3, 33%);
-            grid-template-rows: repeat(3, 33%);
-            background-color: rgba(0, 0, 0, .25);
-            margin: 5% 2% 0;
-            border-radius: 20px;
-            text-align: center;
-            max-width: 60%;
-        }
-        #contact ul li {
-            width: 100%;
-            flex: 1 0 100%
-        }
-        li a {
-            font-family: 'Roboto', 'Segoe UI', Tahoma, Verdana, sans-serif;
-            color: white;
-            text-decoration: none;
-            line-height: 3;
-        }
-        .tooltip {
-            border: none;
-        }
-    }
+                }
+                .item-1 {
+                    flex: 1 0 90%;
+                    margin-left: 5%;
+                }
+                .item {
+                    margin-top: 2vh;
+                    margin-left: 2.5%;
+                    flex: 1 1 30%;
+                }
+                .item-3 {
+                    margin: 0;
+                    width: 275;
+                }
+                img.thumb {
+                    max-width: 100%;
+                    min-height: 0;
+                    margin: 1% 1%;
+                }
+                .projsummary {
+                    font-size: 16px;
+                }
+                span {
+                    margin: 0 0 10% 0;
+                }
+                #contactIcon {
+                    height: 50%;
+                    padding-right: 2vw;
+                    margin: 25% 0 0 0;
+                    float: right;
+                    border-radius: 25px;
+                }
+                #contact h1 {
+                    flex: 1 0 20%
+                }
+                #contact .content {
+                    justify-content: center;
+                    padding: 0 0 5vh 0;
+                    flex: 1 0 100%;
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: 100%;
+                    width: 100%;
+                }
+                .content a {
+                    text-decoration: none;
+                    color: white;
+                }
+                .content ul {
+                    flex: 1 1 100%;
+                    list-style-type: none;
+                    width: 90%;
+                    margin: 0;
+                    padding: 0;
+                }
+                ul img {
+                    /* max-width: 70%; */
+                    max-height: 95%;
+                    margin-left: 30%;
+                    margin-top: 15%;
+                }
+                #git,
+                #email,
+                #phone {
+                    grid-row-start: 1;
+                    grid-row-end: 3;
+                    grid-column-start: 1;
+                    /* margin: 0; */
+                    /* width: 100%; */
+                    border: none;
+                }
+                #gitP,
+                #emailP,
+                #phoneP {
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    grid-row-start: 2;
+                    text-decoration: none;
+                }
+                #contact ul li {
+                    width: 100%;
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                    display: grid;
+                    align-items: center;
+                    grid-template-columns: repeat(3, 33%);
+                    grid-template-rows: repeat(3, 33%);
+                    background-color: rgba(0, 0, 0, .25);
+                    margin: 5% 2% 0;
+                    border-radius: 20px;
+                    text-align: center;
+                    max-width: 100%;
+                }
+                li a {
+                    font-family: 'Roboto', 'Segoe UI', Tahoma, Verdana, sans-serif;
+                    color: white;
+                    text-decoration: none;
+                    line-height: 3;
+                }
+                .tooltip {
+                    border: none;
+                }
+            }
+            
+            @media only screen and (max-width:500px) {
+                /*work grid*/
+                .activeItem article {
+                    display: flex;
+                    justify-content: center;
+                }
+                .activeItem h1 {
+                    font-size: 3vw;
+                }
+                .activeItem span {
+                    font-size: 2.5vw;
+                }
+                .activeItem a {
+                    margin-left: 25% !important;
+                }
+                .item-1 {
+                    flex: 1 0 90%;
+                    margin-left: 5%;
+                }
+                .item {
+                    margin-top: 2vh;
+                    margin-left: 0;
+                    flex: 0 1 45%;
+                }
+                .item h1 {
+                    font-size: 3vw;
+                }
+                article {
+                    display: flex;
+                    justify-content: center;
+                }
+                a.projLink {
+                    width: 90%;
+                    margin-left: 12.5%;
+                    margin-bottom: 2vh;
+                }
+                /* Contact Card */
+                #contact {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding-bottom: 2vh;
+                }
+                #contact aside {
+                    flex: 0 1 30%;
+                    padding: 1vh 0 0 0;
+                    background-color: white;
+                }
+                #contactIcon {
+                    width: 15vw;
+                    padding-right: 5vw;
+                    margin: 0;
+                    float: right;
+                    border-radius: 2px;
+                }
+                #contact h1 {
+                    flex: 1 0 20%
+                }
+                #contact .content {
+                    justify-content: center;
+                    padding: 0;
+                    flex: 1 0 100%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+                .content a {
+                    text-decoration: none;
+                    color: white;
+                }
+                .content ul {
+                    flex: 1 1 100%;
+                    list-style-type: none;
+                    /* width: 100%; */
+                    margin: 0;
+                    padding: 0 0 0 5%;
+                }
+                ul img {
+                    max-width: 70%;
+                    max-height: 95%;
+                    margin-left: 15%;
+                    margin-top: 5%;
+                }
+                #git,
+                #email,
+                #phone {
+                    grid-row-start: 1;
+                    grid-row-end: 3;
+                    grid-column-start: 1;
+                    /* margin: 0; */
+                    /* width: 100%; */
+                    border: none;
+                }
+                #gitP,
+                #emailP,
+                #phoneP {
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    grid-row-start: 2;
+                    text-decoration: none;
+                }
+                li {
+                    display: grid;
+                    align-items: center;
+                    grid-template-columns: repeat(3, 33%);
+                    grid-template-rows: repeat(3, 33%);
+                    background-color: rgba(0, 0, 0, .25);
+                    margin: 5% 2% 0;
+                    border-radius: 20px;
+                    text-align: center;
+                    max-width: 60%;
+                }
+                #contact ul li {
+                    width: 100%;
+                    flex: 1 0 100%
+                }
+                li a {
+                    font-family: 'Roboto', 'Segoe UI', Tahoma, Verdana, sans-serif;
+                    color: white;
+                    text-decoration: none;
+                    line-height: 3;
+                }
+                .tooltip {
+                    border: none;
+                }
+            }
