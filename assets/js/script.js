@@ -18,3 +18,17 @@ window.onclick = function(event) {
         $(this).hide();
     }
 }
+
+const active = $('div.activeItem')
+let aProj = $('<a  class="actProjAnchor" target="_blank">')
+$('.item').on('click', function() {
+    if ($(this).hasClass('activeItem')) {
+        $(this).removeClass('activeItem')
+    } else {
+        $('div.activeItem').removeClass('activeItem')
+        $('div.actTooltip').removeClass('actTooltip')
+        $('div.item span').hide()
+        $(this).addClass('activeItem')
+        $(this).children().addClass('actTooltip')
+    }
+})

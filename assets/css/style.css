@@ -101,8 +101,8 @@
     main {
         max-width: 100%;
         margin: 5em auto;
-        padding: 0 3em 1.5em;
-        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 0 2% 1.5em;
+        /* box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); */
         Font-family: 'Roboto', sans-serif;
     }
     /*Keeping consistent header look and spacing*/
@@ -181,45 +181,65 @@
     }
     /* Previous Work Main Card Grid*/
     
-    section {
-        background-color: rgba(0, 0, 0, 0.1);
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        gap: 20px;
-        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
-        margin: 1em;
+    #prvwrk {
+        width: 100%;
+        /* background-color: rgba(0, 0, 0, 0.1); */
+        /* box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5); */
+        margin: 1vh 0;
     }
     /* Grid spacing out previous project cards */
     
     .wrkgrid {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 2em;
-        margin-bottom: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     /*Item specific grid layout*/
     
-    .item-1 {
-        grid-column: 2 / 7;
+    .activeItem {
+        order: 1 !important;
+        flex: 0 0 60% !important;
+        margin: 0 20% !important;
     }
     
-    .item-2 {
-        grid-row: 2;
-        grid-column: 1 / 4;
-        margin: 0 -4em 0 4em;
+    .activeItem .proj h1 {
+        font-size: 2.5vw;
     }
     
-    .item-2 img,
-    .item-3 img {
-        min-height: 375px;
+    .activeItem span {
+        display: block !important;
+        font-size: 2.5vw;
+        font-weight: 200;
+        margin-top: 2vh;
     }
     
-    .item-3 {
-        grid-row: 2;
-        grid-column: 5 / 8;
-        margin: 0 4em 0 -4em
+    .item {
+        margin: 1vh 1%;
+        flex: 0 0 20%;
+        order: 3;
+    }
+    
+    .item .proj h1 {
+        font-size: 1.5vw;
+    }
+    
+    .item span {
+        display: none;
+    }
+    
+    .instr {
+        order: 2;
+        flex: 1 0 100%;
+        text-align: center;
+        font-size: 1vw;
+    }
+    
+    .projLink {
+        flex: 1 0 100%;
+        font-size: 1.25vw;
+        margin-left: 1vw;
+        text-decoration: none;
     }
     /* CARD attricbutes*/
     
@@ -230,18 +250,28 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
         min-height: 100%;
         position: relative;
         top: 0;
         transition: all .1s ease-in;
+        padding: 2.5vh;
     }
     
     .card article {
-        padding: 0 5%;
-        flex: 1;
+        margin-bottom: 5vh;
+        padding: 0;
+        flex: 0 0 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    
+    article h1 {
+        text-align: center;
+        margin: .5vh 0;
+        font-size: 1.5vw;
     }
     
     div.thumb {
@@ -270,10 +300,92 @@
         margin: -10% 0 0 0;
     }
     
+    #contactIcon {
+        height: 50%;
+        padding-right: 2vw;
+        margin: 25% 0 0 0;
+        float: right;
+        border-radius: 25px;
+    }
+    
+    #contact h1 {
+        flex: 1 0 20%
+    }
+    
+    #contact .content {
+        justify-content: center;
+        padding: 0 0 5vh 0;
+        flex: 1 0 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        width: 100%;
+    }
+    
+    .content a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .content ul {
+        flex: 1 1 100%;
+        list-style-type: none;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+    
     ul img {
-        max-width: 35px;
-        margin: 1% 3% -8% -35%;
-        padding-top: 5%;
+        /* max-width: 70%; */
+        max-height: 95%;
+        margin-left: 30%;
+        margin-top: 15%;
+    }
+    
+    #git,
+    #email,
+    #phone {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        /* margin: 0; */
+        width: 35%;
+        border: none;
+    }
+    
+    #gitP,
+    #emailP,
+    #phoneP {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        text-decoration: none;
+    }
+    
+    #contact ul li {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(3, 33%);
+        background-color: rgba(0, 0, 0, .25);
+        margin: 5% 2% 0;
+        border-radius: 20px;
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    li a {
+        font-family: 'Roboto', 'Segoe UI', Tahoma, Verdana, sans-serif;
+        color: white;
+        text-decoration: none;
+        line-height: 3;
+    }
+    
+    .tooltip {
+        border: none;
     }
     
     li {
@@ -315,10 +427,9 @@
     }
     /*Adding Tooltips to links . . . hopefully*/
     
-    .tooltip {
+    #contact .tooltip {
+        flex: 1 0 100%;
         position: relative;
-        display: inline-block;
-        border-bottom: 1px dotted black;
     }
     
     .tooltip .tooltiptext {
@@ -403,17 +514,22 @@
             transition: all .1s ease-in;
         }
         .wrkgrid {
-            display: grid;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* display: grid;
             gap: 1em;
-            margin-bottom: 0%;
+            margin-bottom: 0%; */
         }
-        .item-1 a {
-            max-width: 100%;
+        .item-1 {
+            flex: 1 0 90%;
+            margin-left: 5%;
         }
-        .item-2 {
-            margin: 0;
-            width: 275px;
-            margin-left: 1em;
+        .item {
+            margin-top: 2vh;
+            margin-left: 2.5%;
+            flex: 1 1 30%;
         }
         .item-3 {
             margin: 0;
@@ -429,5 +545,209 @@
         }
         span {
             margin: 0 0 10% 0;
+        }
+        #contactIcon {
+            height: 50%;
+            padding-right: 2vw;
+            margin: 25% 0 0 0;
+            float: right;
+            border-radius: 25px;
+        }
+        #contact h1 {
+            flex: 1 0 20%
+        }
+        #contact .content {
+            justify-content: center;
+            padding: 0 0 5vh 0;
+            flex: 1 0 100%;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 100%;
+            width: 100%;
+        }
+        .content a {
+            text-decoration: none;
+            color: white;
+        }
+        .content ul {
+            flex: 1 1 100%;
+            list-style-type: none;
+            width: 90%;
+            margin: 0;
+            padding: 0;
+        }
+        ul img {
+            /* max-width: 70%; */
+            max-height: 95%;
+            margin-left: 30%;
+            margin-top: 15%;
+        }
+        #git,
+        #email,
+        #phone {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            /* margin: 0; */
+            /* width: 100%; */
+            border: none;
+        }
+        #gitP,
+        #emailP,
+        #phoneP {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            text-decoration: none;
+        }
+        #contact ul li {
+            width: 100%;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(3, 33%);
+            grid-template-rows: repeat(3, 33%);
+            background-color: rgba(0, 0, 0, .25);
+            margin: 5% 2% 0;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 100%;
+        }
+        li a {
+            font-family: 'Roboto', 'Segoe UI', Tahoma, Verdana, sans-serif;
+            color: white;
+            text-decoration: none;
+            line-height: 3;
+        }
+        .tooltip {
+            border: none;
+        }
+    }
+    
+    @media only screen and (max-width:500px) {
+        /*work grid*/
+        .activeItem article {
+            display: flex;
+            justify-content: center;
+        }
+        .activeItem h1 {
+            font-size: 3vw;
+        }
+        .activeItem span {
+            font-size: 2.5vw;
+        }
+        .activeItem a {
+            margin-left: 25% !important;
+        }
+        .item-1 {
+            flex: 1 0 90%;
+            margin-left: 5%;
+        }
+        .item {
+            margin-top: 2vh;
+            margin-left: 0;
+            flex: 0 1 45%;
+        }
+        .item h1 {
+            font-size: 3vw;
+        }
+        article {
+            display: flex;
+            justify-content: center;
+        }
+        a.projLink {
+            width: 90%;
+            margin-left: 12.5%;
+            margin-bottom: 2vh;
+        }
+        /* Contact Card */
+        #contact {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-bottom: 2vh;
+        }
+        #contact aside {
+            flex: 0 1 30%;
+            padding: 1vh 0 0 0;
+            background-color: white;
+        }
+        #contactIcon {
+            width: 15vw;
+            padding-right: 5vw;
+            margin: 0;
+            float: right;
+            border-radius: 2px;
+        }
+        #contact h1 {
+            flex: 1 0 20%
+        }
+        #contact .content {
+            justify-content: center;
+            padding: 0;
+            flex: 1 0 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .content a {
+            text-decoration: none;
+            color: white;
+        }
+        .content ul {
+            flex: 1 1 100%;
+            list-style-type: none;
+            /* width: 100%; */
+            margin: 0;
+            padding: 0 0 0 5%;
+        }
+        ul img {
+            max-width: 70%;
+            max-height: 95%;
+            margin-left: 15%;
+            margin-top: 5%;
+        }
+        #git,
+        #email,
+        #phone {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            /* margin: 0; */
+            /* width: 100%; */
+            border: none;
+        }
+        #gitP,
+        #emailP,
+        #phoneP {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            text-decoration: none;
+        }
+        li {
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(3, 33%);
+            grid-template-rows: repeat(3, 33%);
+            background-color: rgba(0, 0, 0, .25);
+            margin: 5% 2% 0;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 60%;
+        }
+        #contact ul li {
+            width: 100%;
+            flex: 1 0 100%
+        }
+        li a {
+            font-family: 'Roboto', 'Segoe UI', Tahoma, Verdana, sans-serif;
+            color: white;
+            text-decoration: none;
+            line-height: 3;
+        }
+        .tooltip {
+            border: none;
         }
     }
