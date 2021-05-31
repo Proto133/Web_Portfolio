@@ -16,169 +16,177 @@
 </head>
 
 <body id="top">
-    <header class="header ">
-        <a href="#top " class="wpmain ">Welcome to my web portfolio</a>
+    <header class="noselect header">
+        <h1>Peter Roto</h1>
+        <h3>Web Developer</h3>
         <!--Navigation Menu List-->
-        <nav class="header-right ">
-            <a id="navAbout " class="active " href="#myModal ">About</a>
-            <a href="#prvwrk ">Work</a>
-            <a id=cont-nav href="#contact ">Contact</a>
+        <nav class="noselect header-right">
+            <a id="navAbout" class="noselect nav active" data-target="#myModal">About</a>
+            <a href="#prvwrk" class="noselect nav">Work</a>
+            <a id="navContact" class="noselect nav" data-target="#contactModal">Contact</a>
         </nav>
-        <div id="frost "></div>
+        <!-- <div id="frost"></div> -->
     </header>
     <main>
         <!-- The Modal -->
-        <div id="myModal " class="modal ">
+        <div id="myModal" class="noselect modal">
             <!-- Modal content -->
-            <div class="modal-content ">
-                <section id="about ">
+            <div class="noselect modal-content">
+                <button class="noselect close">&#10005;</button>
+                <section id="about">
                     <h1>About Me</h1>
-                    <aside class="about ">
-                        <a href="https://www.linkedin.com/in/peterroto " target="_blank ">
-                            <img id="propic " src="./assets/images/Ntbg.png " alt="Peter Roto 's Profile Picture" />
+                    <aside class="noselect about">
+                        <a href="https://www.linkedin.com/in/peterroto" target="_blank">
+                            <img id="propic" src="./assets/images/Ntbg.png" alt="Peter Roto 's Profile Picture" />
                         </a>
                     </aside>
                     <div class=content>
                         <p> As can be seen, my name is Peter Roto. I'm a very driven individual who understands the value derived from helping others. <br><br>My resume may seem a random array of disconnected duties and jobs, but on the contrary, it is a
                             great depiction of the intrinsic drive to share my unique multifaceted skillset with as many people as possible.
-
                         </p>
                     </div>
-                    <span class="close">&times; Close</span>
                 </section>
+                <footer class="noselect modal-footer">
+                </footer>
             </div>
         </div>
         <!-- Previous Work Grid Set -->
         <section id="prvwrk">
-            <h1>Previous Work</h1>
-            <div class="wrkgrid">
-                <div href="#top" class="card item activeItem">
-                    <div title="click the link to check it out" class="tooltip">
-                        <div class="thumb">
+            <div class="noselect wrkgrid">
+                <div href="#top" class="noselect card item activeItem">
+                    <div title="click the link to check it out" class="noselect tooltip">
+                        <div class="noselect thumb">
                             <img src="./assets/images/projects/BootCampBox.png" alt="Screenshot of first group project 'BootCampBox'." />
                         </div>
                         <article class=proj>
                             <h1>BootCampBox</h1>
-                            <span class="projsummary">This is a single page with a responsive flexbox layout and clean animations and transitions.</span>
+                            <span class="noselect projsummary">This is a single page with a responsive flexbox layout and clean animations and transitions.</span>
                         </article>
-                        <a class='projLink' href="https://nubootcampbox.xyz" target="_blank">Visit Deployed Project</a>
+                        <a class='projLink' href="http://nubootcampbox.xyz" target="_blank">Visit Deployed Project</a>
                     </div>
                 </div>
-                <p class="instr">Click on Thumbnail to Bring into Focus</p>
+                <p class="noselect instr">Click on Thumbnail to Bring into Focus</p>
                 <!-- grid item, containing a card -->
-                <div href="#top" class="item card">
-                    <div title="click the link to check it out" class="tooltip">
-                        <div class="thumb">
+                <div href="#top" class="noselect item card">
+                    <div title="click the link to check it out" class="noselect tooltip">
+                        <div class="noselect thumb">
                             <img id="cheatsheetImg" src="./assets/images/projects/CSSCheatsheet.png" alt="Beautiful example of a clean grid layout and impeccable color choices." />
                         </div>
-                        <span class="tooltiptext">Visit Deployed Project</span>
+                        <span class="noselect tooltiptext">Visit Deployed Project</span>
                         <article class=proj>
                             <h1>CSS Snippet Cheatsheet</h1>
-                            <span class="projsummary">This is a single page with a responsive flexbox layout and clean animations and transitions.</span>
+                            <span class="noselect projsummary">This is a single page with a responsive flexbox layout and clean animations and transitions.</span>
                         </article>
                         <a class='projLink' href="https://proto133.github.io/CSS_CheatSheet/" target="_blank">Visit Deployed Project</a>
                     </div>
                 </div>
                 <!-- grid item, containing a card -->
-                <div href="#top" class="item card">
-                    <div title="click the link to check it out" class="tooltip">
-                        <div class="thumb">
+                <div href="#top" class="noselect item card">
+                    <div title="click the link to check it out" class="noselect tooltip">
+                        <div class="noselect thumb">
                             <img src="./assets/images/projects/PasswordGen_Screenshot.png" alt="Snippet of the very clean and commented CSS code from the projecy" />
                         </div>
-                        <span class="tooltiptext">Visit Deployed Project</span>
+                        <span class="noselect tooltiptext">Visit Deployed Project</span>
                         <article class=proj>
                             <h1> Password Generator</h1>
-                            <span class="projsummary">This project is a wonderful example of my abilities to take existing code and clean it up to comply with Web Accessibility Standards and Practices, while maintaining functionality and aesthetics.</span>
+                            <span class="noselect projsummary">This project is a wonderful example of my abilities to take existing code and clean it up to comply with Web Accessibility Standards and Practices, while maintaining functionality and aesthetics.</span>
                         </article>
                         <a class='projLink' href="https://proto133.github.io/Password_Generator/" target="_blank"> Visit Deployed Project</a>
                     </div>
                 </div>
                 <!-- grid item, containing a card -->
-                <div href="#top" class="item card">
-                    <div title="click the link to check it out" class="tooltip">
-                        <div class="thumb">
-                            <img class="thumb" src="assets/images/projects/CodeQuiz.png" alt="Very basic but clean looking 'About Me' webpage">
+                <div href="#top" class="noselect item card">
+                    <div title="click the link to check it out" class="noselect tooltip">
+                        <div class="noselect thumb">
+                            <img class="noselect thumb" src="assets/images/projects/CodeQuiz.png" alt="Very basic but clean looking 'About Me' webpage">
                         </div>
-                        <span class="tooltiptext">Visit Deployed Project</span>
+                        <span class="noselect tooltiptext">Visit Deployed Project</span>
                         <article class=proj>
                             <h1>About Me</h1>
-                            <span class="projsummary">This project shows the very basic abilities of deploying a webpage successfully. This is a good template that can be scaled as needed.</span>
+                            <span class="noselect projsummary">This project shows the very basic abilities of deploying a webpage successfully. This is a good template that can be scaled as needed.</span>
                         </article>
                         <a class='projLink' href="https://proto133.github.io/Code_Quiz/" target="_blank">Visit Deployed Project</a>
                     </div>
                 </div>
                 <!-- grid item, containing a card -->
-                <div href="#top" class="item card">
-                    <div title="click the link to check it out" class="tooltip">
-                        <div class="thumb">
-                            <img class="thumb" src="assets/images/projects/WeatherBoard_screenshot.png" alt="Very basic but clean looking 'weatherboard' webpage">
+                <div href="#top" class="noselect item card">
+                    <div title="click the link to check it out" class="noselect tooltip">
+                        <div class="noselect thumb">
+                            <img class="noselect thumb" src="assets/images/projects/WeatherBoard_screenshot.png" alt="Very basic but clean looking 'weatherboard' webpage">
                         </div>
-                        <span class="tooltiptext">Visit Deployed Project</span>
+                        <span class="noselect tooltiptext">Visit Deployed Project</span>
                         <article class=proj>
                             <h1>WeatherBoard</h1>
-                            <span class="projsummary">This project shows the very basic abilities of deploying a webpage successfully. This is a good template that can be scaled as needed.</span>
+                            <span class="noselect projsummary">This project shows the very basic abilities of deploying a webpage successfully. This is a good template that can be scaled as needed.</span>
                         </article>
                         <a class='projLink' href="https://proto133.github.io/weatherboard/" target="_blank"> Visit Deployed Project</a>
                     </div>
                 </div>
                 <!-- grid item, containing a card -->
-                <div href="#top" class="item card">
-                    <div title="click the link to check it out" class="tooltip">
-                        <div class="thumb">
-                            <img class="thumb" src="assets/images/projects/Scheduler_screenshot.png" alt="Very basic but clean looking Scheduler web app">
+                <div href="#top" class="noselect item card">
+                    <div title="click the link to check it out" class="noselect tooltip">
+                        <div class="noselect thumb">
+                            <img class="noselect thumb" src="assets/images/projects/Scheduler_screenshot.png" alt="Very basic but clean looking Scheduler web app">
                         </div>
-                        <span class="tooltiptext">Visit Deployed Project</span>
+                        <span class="noselect tooltiptext">Visit Deployed Project</span>
                         <article class=proj>
                             <h1>Scheduler</h1>
-                            <span class="projsummary">This project shows the very basic abilities of deploying a webpage successfully. This is a good template that can be scaled as needed.</span>
+                            <span class="noselect projsummary">This project shows the very basic abilities of deploying a webpage successfully. This is a good template that can be scaled as needed.</span>
                         </article>
                         <a class='projLink' href="https://proto133.github.io/prework-about-me/" target="_blank"> Visit Deployed Project</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="normal" id="contact">
-            <h1>Contact Info</h1>
-            <aside>
-                <img id="contactIcon" src="./assets/images/conact_info.png" alt="SVG drawing of a contact card" />
-            </aside>
-            <div class=content>
-                <ul>
-                    <div class="tooltip">
-                        <a href="tel:8478757196" target="_top">
-                            <li>
-                                <img id="phone" src="assets/images/baseline_call_black_48dp.png" alt="Google's Material Icon for phonecall">
-                                <p id="phoneP">Phone</p>
-                                <span class="tooltiptext">Call Me</span>
-                            </li>
-                        </a>
+        <!-- The Modal -->
+        <div id="contactModal" class="noselect modal">
+            <!-- Modal content -->
+            <div class="noselect modal-content">
+                <button type="button" class="noselect close">&#10005;</button>
+                <section class="noselect normal" id="contact">
+                    <h1>Contact Info</h1>
+                    <aside>
+                        <img id="contactIcon" src="./assets/images/conact_info.png" alt="SVG drawing of a contact card" />
+                    </aside>
+                    <div class=content>
+                        <ul>
+                            <div class="noselect tooltip">
+                                <a href="tel:8478757196" target="_top">
+                                    <li>
+                                        <img id="phone" src="assets/images/baseline_call_black_48dp.png" alt="Google's Material Icon for phonecall">
+                                        <p id="phoneP">Phone</p>
+                                        <span class="noselect tooltiptext">Call Me</span>
+                                    </li>
+                                </a>
+                            </div>
+                            <div class="noselect tooltip">
+                                <a href="http://www.github.com/proto133" target="_blank">
+                                    <li>
+                                        <img id="git" src="./assets/images/github.png" alt="Flat icon for the website Github">
+                                        <p id="gitP">Github</p>
+                                        <span class="noselect tooltiptext">Visit my Github Repo</span>
+                                    </li>
+                                </a>
+                            </div>
+                            <div class="noselect tooltip">
+                                <a href="mailto:peterdroto@gmail.com" target="_blank">
+                                    <li>
+                                        <img id="email" src="./assets/images/baseline_email_black_48dp.png" alt="Google's Material Icon for Email">
+                                        <p id="emailP">eMail</p>
+                                        <span class="noselect tooltiptext">Send Me an eMail</span>
+                                    </li>
+                                </a>
+                            </div>
+                        </ul>
                     </div>
-                    <div class="tooltip">
-                        <a href="http://www.github.com/proto133" target="_blank">
-                            <li>
-                                <img id="git" src="./assets/images/github.png" alt="Flat icon for the website Github">
-                                <p id="gitP">Github</p>
-                                <span class="tooltiptext">Visit my Github Repo</span>
-                            </li>
-                        </a>
-                    </div>
-                    <div class="tooltip">
-                        <a href="mailto:peterdroto@gmail.com" target="_blank">
-                            <li>
-                                <img id="email" src="./assets/images/baseline_email_black_48dp.png" alt="Google's Material Icon for Email">
-                                <p id="emailP">eMail</p>
-                                <span class="tooltiptext">Send Me an eMail</span>
-                            </li>
-                        </a>
-                    </div>
-                </ul>
+                </section>
             </div>
-        </section>
+        </div>
     </main>
-    <footer class="cntr">
-        <a class="tooltip" href="#top">
+    <footer class="noselect cntr">
+        <a class="noselect tooltip" href="#top">
 Made with ♥ by Peter Roto
-<span class="tooltiptext">Jump back up to the top!</span>
+<span class="noselect tooltiptext">Jump back up to the top!</span>
 </a>
     </footer>
 
