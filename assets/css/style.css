@@ -31,13 +31,13 @@ body {
     /* Sit on top */
     z-index: 250;
     /* Location of the box */
-    padding-top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-top: 10%;
+    left: 0;
+    /* transform: translateX(-50%); */
     top: 0;
     /*Size and properties*/
-    width: 75%;
-    height: 75%;
+    width: 100%;
+    height: 100%;
     overflow: none;
 }
 
@@ -45,10 +45,10 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    /* background: linear-gradient(to right, rgb(0, 0, 0) 28%, hsla(0, 0%, 56%, 0.85)40%, hsla(293, 87%, 75%, 0.60) 57%, hsla(293, 100%, 46%, 0.75) 86%, hsla(0, 0%, 0%, 1) 100%); */
-    background-color: rgba(110, 109, 110, .85);
-    padding-bottom: 2vh;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(0, 0, 0) 28%, hsla(0, 0%, 56%, 0.85)40%, hsla(293, 87%, 75%, 0.60) 57%, hsla(293, 100%, 46%, 0.75) 86%, hsla(0, 0%, 0%, 1) 100%);
+    /* background-color: rgba(110, 109, 110, .85); */
+    padding: 1.5vw;
     border-radius: 3vh;
 }
 
@@ -68,7 +68,8 @@ body {
     /* background-color: transparent; */
     width: fit-content;
     font-variant: small-caps;
-    margin: -2vw 0 0 0;
+    margin: -1vw 0 0 0;
+    transform: translateX(-100%);
     z-index: 10;
 }
 
@@ -162,8 +163,8 @@ main {
 
 /*About Me and Contact*/
 
-.modal-content {
-    justify-content: flex-end;
+div.modal {
+    box-shadow: none;
 }
 
 #about {
@@ -184,17 +185,6 @@ main {
     text-align: center;
     font-size: 3vw;
 }
-
-
-/* section.normal {
-    background-color: rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-    gap: 20px;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
-    margin: 1em;
-} */
 
 .about {
     grid-row-start: 1;
@@ -223,7 +213,8 @@ aside img {
     font-weight: 500;
     font-size: 1.5vw;
     padding: 5%;
-    margin-top: -15%;
+    margin-top: 0;
+    /* width: %; */
 }
 
 
@@ -238,7 +229,6 @@ aside img {
     color: black;
     box-shadow: 1px 0px 5px rgb(255, 255, 255), -3px -2px 3px rgb(0 0 0);
     margin: 2.5vw 5vw;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .content ul {
@@ -262,12 +252,13 @@ aside img {
 
 #contact .content {
     justify-content: center;
-    padding: 0 0 5vh 0;
+    /* padding: 0 0 5vh 0; */
+    padding: 0 0 3vh 4vh;
     flex: 1 0 100%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
-    width: 100%;
+    width: 90%;
 }
 
 .content a {
@@ -313,7 +304,7 @@ ul img {
 }
 
 #contact ul li {
-    width: 100%;
+    width: 75%;
     grid-column-start: 1;
     grid-column-end: 5;
     display: grid;
