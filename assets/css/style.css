@@ -58,6 +58,7 @@ body {
 .close {
     color: #000000;
     flex: 0 0 auto;
+    float: right;
     line-height: 4vw;
     font-size: 3vw;
     font-weight: bold;
@@ -67,7 +68,8 @@ body {
     /* background-color: transparent; */
     width: fit-content;
     font-variant: small-caps;
-    margin: -2vw -1vw 0 0;
+    margin: -2vw 0 0 0;
+    z-index: 10;
 }
 
 .close:hover,
@@ -289,6 +291,7 @@ ul img {
 }
 
 #git,
+#LinkedIn,
 #email,
 #phone {
     grid-row-start: 1;
@@ -300,6 +303,7 @@ ul img {
 }
 
 #gitP,
+#LinkedInP,
 #emailP,
 #phoneP {
     grid-column-start: 2;
