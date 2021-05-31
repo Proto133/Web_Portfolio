@@ -13,6 +13,7 @@ function keepHeader() {
     let headerHt = ($('.header').height());
     console.log(headerHt)
     $('main').attr("style", "margin-top:" + (headerHt + 10) + 'px !important;');
+
 }
 // Get the modal
 const myModal = $("#myModal");
@@ -31,11 +32,13 @@ function openModal(data) {
 // When the user clicks the button, open the modal 
 $("#navAbout").on('click', function() {
     $('#myModal').show();
+    $('#contactModal').hide()
 })
 
 $('#navContact').on('click', function() {
     console.log('contactModal clicked')
     $('#contactModal').show()
+    $('#myModal').hide()
 })
 
 //When the user clicks on <span> (x), close the modal
@@ -55,11 +58,13 @@ $('.item').on('click', function() {
         $(this).removeClass('activeItem')
     } else {
         $('div.activeItem').removeClass('activeItem')
-        $('div.actTooltip').removeClass('actTooltip')
         $('div.item span').hide()
         $(this).addClass('activeItem')
         $(this).removeClass('projStable')
-        $(this).children().addClass('actTooltip')
     }
+    $(window).scrollTop(0);
+})
+
+$('footer').on('click', function() {
     $(window).scrollTop(0);
 })
