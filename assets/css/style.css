@@ -586,6 +586,9 @@ a.tooltip {
 
 @media only screen and (max-width: 768px) {
     /* styles for narrow screens */
+    #resumeDiv {
+        top: 0%;
+    }
     .header {
         display: flex;
         flex-direction: column;
