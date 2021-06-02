@@ -5,8 +5,14 @@ body {
     /* background: -webkit-linear-gradient(170deg, hsla(282, 100%, 7%, 1) 0%, hsla(283, 99%, 64%, 1) 10%, hsla(283, 90%, 68%, 0.9) 15%, hsla(282, 71%, 74%, 0.7) 22%, hsla(283, 36%, 80%, 0.8) 30%, hsla(105, 11%, 85%, 0.9) 36%, hsla(0, 0%, 100%, 1) 100%); */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1A0025", endColorstr="#CA48FE", GradientType=1);
     background-repeat: no-repeat;
-    background-size: 100%;
+    /* background-size: 100%; */
     font-family: 'Roboto', sans-serif;
+}
+
+#vanta {
+    z-index: 0 !important;
+    position: inherit;
+    height: 100% !important;
 }
 
 .noselect {
@@ -104,6 +110,7 @@ header h1 {
     /* font-size: 2.5vw; */
     margin-bottom: 0;
     line-height: 1;
+    z-index: 2;
 }
 
 header h3 {
@@ -113,6 +120,7 @@ header h3 {
     line-height: 1;
     transform: translateY(-10%);
     margin: 0;
+    z-index: 2;
 }
 
 .header a {
@@ -131,12 +139,12 @@ header h3 {
 #resumeDiv {
     position: absolute;
     display: grid;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 95%;
+    left: 100%;
+    transform: translateX(-100%);
     margin: .25% 0 0 0;
     padding: 1vh 0;
-    background-color: rgba(0, 0, 0, .25);
+    background-color: rgba(255, 255, 255, 0.5);
     max-height: 35px;
 }
 
@@ -181,6 +189,7 @@ header a.active {
 /*Main Section -- Everything under the <header>*/
 
 main {
+    z-index: 5;
     width: 100%;
     margin-bottom: 10vh;
     /* box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); */
@@ -452,6 +461,7 @@ li a {
 }
 
 .instr {
+    color: white !important;
     line-height: 1;
     /* margin-top: -3%; */
     order: 2;
