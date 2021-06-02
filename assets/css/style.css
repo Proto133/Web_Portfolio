@@ -1,11 +1,18 @@
 /* Start of CSS*/
 
+html {
+    /* min-height: 100%; */
+}
+
 body {
     background: #b4b4b4;
+    height: 80% !important;
     /* background: -webkit-linear-gradient(170deg, hsla(282, 100%, 7%, 1) 0%, hsla(283, 99%, 64%, 1) 10%, hsla(283, 90%, 68%, 0.9) 15%, hsla(282, 71%, 74%, 0.7) 22%, hsla(283, 36%, 80%, 0.8) 30%, hsla(105, 11%, 85%, 0.9) 36%, hsla(0, 0%, 100%, 1) 100%); */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1A0025", endColorstr="#CA48FE", GradientType=1);
     background-repeat: no-repeat;
     /* background-size: 100%; */
+    margin: 0 !important;
+    padding: 0 !important;
     font-family: 'Roboto', sans-serif;
 }
 
