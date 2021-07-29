@@ -14,19 +14,23 @@
 
 html {
     /* min-height: 100%; */
+    background-image: url('../images/starrysky.gif');
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background: #b4b4b4;
+    position: absolute;
     width: 100%;
-    height: auto;
-    /* background: -webkit-linear-gradient(170deg, hsla(282, 100%, 7%, 1) 0%, hsla(283, 99%, 64%, 1) 10%, hsla(283, 90%, 68%, 0.9) 15%, hsla(282, 71%, 74%, 0.7) 22%, hsla(283, 36%, 80%, 0.8) 30%, hsla(105, 11%, 85%, 0.9) 36%, hsla(0, 0%, 100%, 1) 100%); */
+    /* height: auto; */
+    background: -webkit-linear-gradient(340deg, hsla(282, 100%, 7%, .2) 0%, hsla(283, 99%, 64%, .3) 10%, hsla(283, 90%, 68%, 0.3) 15%, hsla(282, 71%, 74%, 0.3) 22%, hsla(283, 36%, 80%, 0.3) 30%, hsla(105, 11%, 85%, 0.3) 36%, hsla(0, 0%, 100%, .2) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1A0025", endColorstr="#CA48FE", GradientType=1);
     background-repeat: no-repeat;
-    /* background-size: 100%; */
+    background-size: 100%;
     margin: 0 !important;
     padding: 0 !important;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 #vanta {
@@ -467,6 +471,7 @@ li a {
 
 .item {
     min-height: 150px !important;
+    min-width: 200px !important;
     margin: 1vh 1% !important;
     flex: 0 0 15%;
     order: 3;
@@ -485,7 +490,7 @@ li a {
 
 .item .proj h1 {
     flex: 0 1 100%;
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
 }
 
 .item span {
@@ -609,7 +614,13 @@ footer a {
 }
 
 footer a:hover {
-    text-shadow: violet;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    transition: text-shadow 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+footer a:hover::after {
+    opacity: 1;
 }
 
 .cntr {
@@ -854,8 +865,7 @@ footer a span {
     a.projLink {
         width: 90%;
         left: 0;
-        margin-left: 0 !important;
-        margin-bottom: 2vh;
+        margin: 1vh 0;
         font-size: 3vw;
     }
     /*Modals*/
