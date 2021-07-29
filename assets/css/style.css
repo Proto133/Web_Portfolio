@@ -537,7 +537,7 @@ li a {
 /* CARD attricbutes*/
 
 .card {
-    background: rgba(255, 255, 255, .85);
+    background: rgba(255, 255, 255, .95);
     text-decoration: none;
     color: #444;
     box-shadow: 0 2px 5px rgb(255, 255, 255);
