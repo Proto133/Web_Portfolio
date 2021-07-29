@@ -1,5 +1,17 @@
 /* Start of CSS*/
 
+:root {
+    --largestFont: calc(24px + 0.85vw);
+    --largeFont: calc(18px + .75vw);
+    --normalFont: calc(16px + 0.5vw);
+    --smallFont: calc(10px + 0.698vw);
+    --tinyFont: calc(6px + 0.698vw);
+    --smallLineHeight: calc(var(--smallFont) * 1.4);
+    --normallLineHeight: calc(var(--normalFont)*1.4);
+    --largelLineHeight: calc(var(--largeFont)* 1.4);
+    --largestlLineHeight: calc(var(--largestFont)* 1.4);
+}
+
 html {
     /* min-height: 100%; */
 }
@@ -96,12 +108,25 @@ body {
     cursor: pointer;
 }
 
+
+/* Start HEADER */
+
+.mobile {
+    display: none;
+}
+
+hr {
+    color: slategray;
+    margin: .5vh 0;
+    border-color: slategray;
+}
+
 .header {
     position: fixed;
     top: 0;
     right: 0;
     width: 99%;
-    background: linear-gradient(to right, hsla(0, 0%, 100%, 1) 28%, hsla(0, 0%, 100%, 0.85) 54%, hsla(293, 87%, 75%, 0.95) 77%, hsla(293, 100%, 46%, 0.98) 86%, hsla(0, 0%, 0%, 1) 100%);
+    background: linear-gradient(to right, hsla(0, 0%, 100%, 1) 28%, hsla(0, 0%, 100%, 0.75) 54%, hsla(293, 87%, 75%, 0.65) 77%, hsla(293, 100%, 46%, 0.8) 86%, hsla(0, 0%, 0%, 1) 100%);
     /* background: linear-gradient(to right, hsla(0, 0%, 100%, 1) 28%, hsla(0, 0%, 100%, 0.75) 54%, hsla(293, 87%, 75%, 0.60) 77%, hsla(293, 100%, 46%, 0.75) 86%, hsla(0, 0%, 0%, 1) 100%); */
     /* margin: 0 3% 1% 0; */
     /* background: linear-gradient(to right, hsla(0, 0%, 100%, 1) 28%, hsla(0, 0%, 100%, 0.25) 64%, hsla(293, 87%, 75%, 0.15) 77%, hsla(293, 100%, 46%, 0.25) 86%, hsla(0, 0%, 0%, .5) 100%); */
@@ -114,21 +139,24 @@ body {
 }
 
 header h1 {
-    display: inline;
-    /* font-size: 2.5vw; */
-    margin-bottom: 0;
-    line-height: 1;
+    display: inline-block;
+    font-size: var(--largeFont);
+    line-height: var(--largelLineHeight);
     z-index: 2;
 }
 
 header h3 {
     display: inline;
     font-family: 'Roboto Thin', 'Segoe UI', Tahoma, Verdana, sans-serif;
-    font-size: 2vw;
+    font-size: var(--smallFont);
     line-height: 1;
     transform: translateY(-10%);
     margin: 0;
     z-index: 2;
+}
+
+header {
+    padding-top: 5vh;
 }
 
 .header a {
@@ -139,30 +167,9 @@ header h3 {
     text-decoration: none;
     font-size: 2.75vw;
     font-weight: 500;
-    -webkit-text-stroke: .5px rgb(0, 0, 0);
+    -webkit-text-stroke: .1px rgb(0, 0, 0);
     line-height: 25px;
     border-radius: 4px;
-}
-
-#resumeDiv {
-    position: absolute;
-    display: grid;
-    top: 95%;
-    left: 100%;
-    transform: translateX(-100%);
-    margin: .25% 0 0 0;
-    padding: 1vh 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    max-height: 35px;
-}
-
-#resume {
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    font-size: 2vw !important;
-    color: black;
-    padding: 5% 2vw;
 }
 
 .header img {
@@ -177,6 +184,12 @@ header h3 {
     padding-top: .5%;
     float: right;
     height: 100%;
+}
+
+.header-right a {
+    display: inline-block;
+    margin-top: 1vh;
+    font-size: var(--smallFont);
 }
 
 .header-right a:hover {
@@ -590,6 +603,15 @@ footer {
     z-index: 100;
 }
 
+footer a {
+    text-decoration: none;
+    color: black
+}
+
+footer a:hover {
+    text-shadow: violet;
+}
+
 .cntr {
     flex: 1 0 100%;
     width: 100%;
@@ -599,19 +621,30 @@ footer {
 
 a.tooltip {
     text-align: center;
-    font-size: x-large;
+    font-size: var(--smallFont);
     height: 100%;
+}
+
+footer a span {
+    font-size: var(--tinyFont) !important;
 }
 
 @media only screen and (max-width: 768px) {
     /* styles for narrow screens */
-    #resumeDiv {
-        top: 0%;
+    .mobile {
+        flex: 1;
+        display: inline-block;
+        text-align: center;
+    }
+    #name,
+    #title {
+        display: none;
     }
     .header {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-evenly;
         margin: 0;
         padding: 0;
         width: 100%;
@@ -630,9 +663,11 @@ a.tooltip {
         z-index: 100;
     }
     header h1 {
-        flex: 0 1 30%;
+        flex: 0 1 40%;
+        margin-bottom: 0;
     }
     header h3 {
+        flex: 0 1 40%;
         font-family: 'Roboto Thin', 'Segoe UI', Tahoma, Verdana, sans-serif;
         font-size: 2vw;
         line-height: 1;
@@ -645,17 +680,23 @@ a.tooltip {
     }
     .nav {
         flex: 0 1 30%;
-        padding: 1vw !important;
-        font-size: 5vw !important;
+        /* padding: 1vw !important; */
+        /* font-size: 5vw !important; */
         color: rgb(0, 0, 0) !important;
         width: fit-content;
     }
-    .header-right a.active {
-        border: none;
-    }
     .header-right {
+        margin-top: 0;
         display: flex;
         flex: 1 0 100%;
+    }
+    .header-right a {
+        margin-top: 0;
+        padding-top: 0;
+        font-size: var(--smallFont);
+    }
+    .header-right a.active {
+        border: none;
     }
     .modal {
         position: fixed;
@@ -758,8 +799,11 @@ a.tooltip {
 }
 
 @media only screen and (max-width:500px) {
+    header h1 {
+        flex: 0 1 20%;
+    }
     header h3 {
-        display: inline;
+        flex: 1 0 80%;
         font-family: 'Roboto Thin', 'Segoe UI', Tahoma, Verdana, sans-serif;
         font-size: 3vw;
         line-height: 1;

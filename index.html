@@ -13,14 +13,20 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/CSS" href="./assets/css/style.css">
     <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script defer type="text/javascript" src="./assets/js/script.js"></script>
 
 </head>
 
 <body>
     <header class="noselect header">
-        <h1>Peter Roto</h1>
-        <h3>Web Developer</h3>
+        <h1 id="name">Peter Roto</h1>
+        <h3 id="title">Web Developer</h3>
+        <div class="mobile">
+            <h1>Peter Roto</h1>
+            <h3>Web Developer</h3>
+            <hr>
+        </div>
         <!-- <div id="resumeDiv">
             <img src="./assets/images/download.png" alt="download icon">
             <a href="./assets/PRoto_Resume.pdf" id="resume" download="PRoto_Resume.pdf">Resum&egrave;</a>
@@ -190,14 +196,25 @@
         </div>
     </main>
     <footer class="noselect cntr">
-        <a class="noselect tooltip" href="#top">
-                Made with ♥ by Peter Roto
-                <span class="noselect tooltiptext">Jump back up to the top!</span>
-            </a>
+        <a title="Still a Work in Progress" href="http://peterroto.com"><span class="material-icons">
+            language
+            </span> My Website</a> |
+        <a title="Jump back up to the top!" class="noselect" href="#top"><span class="material-icons">
+            arrow_drop_up
+            </span> 
+                Made with ♥ by Peter Roto <span class="material-icons">
+                    arrow_drop_up
+                    </span>
+            </a> | <a title="Email me" href="mailto://peter@peterroto.com" target="_blank">Email Me <span class="material-icons">
+                send
+                </span></a>
     </footer>
 
     <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!--Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
