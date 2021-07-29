@@ -21,15 +21,16 @@
     <header class="noselect header">
         <h1>Peter Roto</h1>
         <h3>Web Developer</h3>
-        <div id="resumeDiv">
+        <!-- <div id="resumeDiv">
             <img src="./assets/images/download.png" alt="download icon">
             <a href="./assets/PRoto_Resume.pdf" id="resume" download="PRoto_Resume.pdf">Resum&egrave;</a>
-        </div>
+        </div> -->
         <!--Navigation Menu List-->
         <nav class="noselect header-right">
-            <a id="navAbout" class="noselect nav active" data-target="#myModal">About</a>
-            <a href="#prvwrk" class="noselect nav">Work</a>
-            <a id="navContact" class="noselect nav" data-target="#contactModal">Contact</a>
+            <a title="Quick Info About Me" id="navAbout" class="noselect nav active" data-target="#myModal">About</a>
+            <a title="Download My Resum&eacute;" href="./assets/PRoto_Resume.pdf" class="noselect nav" download="PRoto_Resume.pdf">Resum&eacute;</a>
+            <!-- <a href="#prvwrk" class="noselect nav">Work</a> -->
+            <a title="Links to Connect With Me" id="navContact" class="noselect nav" data-target="#contactModal">Contact</a>
 
         </nav>
         <!-- <div id="frost"></div> -->
@@ -75,37 +76,37 @@
                     <img alt="material design down arrow" src="./assets/images/down_arrow2.png"></img>
                 </p>
                 <!-- grid item, containing a card -->
-                <div href="#top" class="noselect item card">
+                <div href="#top" class="noselect card item">
                     <div class="noselect thumb">
-                        <img id="cheatsheetImg" src="./assets/images/projects/CSSCheatsheet.png" alt="Beautiful example of a clean grid layout and impeccable color choices." />
+                        <img src="./assets/images/projects/TrashParty.png" alt="Screenshot of second group project 'TrashParty'." />
                     </div>
                     <article class=proj>
-                        <h1>CSS Cheatsheet</h1>
-                        <span class="noselect projsummary">This is a single page with a responsive flexbox layout and clean animations and transitions.</span>
+                        <h1>TrashParty</h1>
+                        <span class="noselect projsummary">NFT-style Webapp (for entertainment purposes): A website where once a day you open a pack of random stuff (data we collect from different API's). In the packs could be anywhere from songs to movies to pokemon cards, really any type of data we can get from an API and have time to implement. You can trade your "trash" with other users till you get items you actually like.</span>
                     </article>
-                    <a class='projLink' href="https://proto133.github.io/CSS_CheatSheet/" target="_blank">Visit Deployed Project</a>
+                    <a class='projLink' href="http://trashparty.xyz" target="_blank">Visit Deployed Project</a>
                 </div>
                 <!-- grid item, containing a card -->
                 <div href="#top" class="noselect item card">
                     <div class="noselect thumb">
-                        <img src="./assets/images/projects/PasswordGen_Screenshot.png" alt="Snippet of the very clean and commented CSS code from the projecy" />
+                        <img src="./assets/images/projects/Talkio.png" alt='Screenshot of the "Edit Post" section of Talkio app as deployed to Heroku' />
                     </div>
                     <article class=proj>
-                        <h1> Password Generator</h1>
-                        <span class="noselect projsummary">This web application is an example of using Javascript objects, methods, functions, and logic to create a password generator.</span>
+                        <h1>Talkio</h1>
+                        <span class="noselect projsummary">This web application is a simple "TechBlog" Created with Node, Express, Handlebars, MySQL </span>
                     </article>
-                    <a class='projLink' href="https://proto133.github.io/Password_Generator/" target="_blank"> Visit Deployed Project</a>
+                    <a class='projLink' href="http://talkio-2021.herokuapp.com/" target="_blank"> Visit Deployed Project</a>
                 </div>
                 <!-- grid item, containing a card -->
                 <div href="#top" class="noselect item card">
                     <div class="noselect thumb">
-                        <img class="noselect thumb" src="assets/images/projects/CodeQuiz.png" alt="Very basic but clean looking 'About Me' webpage">
+                        <img class="noselect thumb" src="assets/images/projects/README.png" alt="Example of a README file produced with WritemeREADME">
                     </div>
                     <article class=proj>
-                        <h1>Code Quiz</h1>
-                        <span class="noselect projsummary">The Javascript Code Quiz is a fun and interactive way to test your basic javascript code skills. With 15 questions, it will challenge you as you progress through the quiz. This application invites you to challenge your friends to see who can score the highest in the shorest amount of time. The fun could last for about 20 minutes . . . it's kind of fun though.</span>
+                        <h1>WritemeREADME</h1>
+                        <span class="noselect projsummary">A README Generator deployed to NPMjs to help developers knock out a README for their projects in quick fashion and have them look clean.</span>
                     </article>
-                    <a class='projLink' href="https://proto133.github.io/Code_Quiz/" target="_blank">Visit Deployed Project</a>
+                    <a class='projLink' href="https://www.npmjs.com/package/writemereadme" target="_blank"> Visit NPM Package Page</a>
                 </div>
                 <!-- grid item, containing a card -->
                 <div href="#top" class="noselect item card">
@@ -123,14 +124,14 @@
                 <!-- grid item, containing a card -->
                 <div href="#top" class="noselect item card">
                     <div class="noselect thumb">
-                        <img class="noselect thumb" src="assets/images/projects/Scheduler_screenshot.png" alt="Very basic but clean looking Scheduler web app">
+                        <img class="noselect thumb" src="assets/images/projects/Note-O-Rama.png" alt="The Welcome Page for the Deployed Note-O-Rama Project (It is truly awe inspiring, it's a shame you can't see it)">
                     </div>
                     <article class=proj>
-                        <h1>Scheduler</h1>
-                        <span class="noselect projsummary">Scheduling application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
-                        </span>
+                        <h1>Note-O-Rama</h1>
+                        <span class="noselect projsummary">A simple note-taking application using nodejs leveraging express as server-side middleware and routing framework.<br>
+                            <i>It is important to note that this application simply uses a JSON file as the database and is more of a conceptual application than a real solution.</i></i></span>
                     </article>
-                    <a class='projLink' href="https://proto133.github.io/Scheduler/" target="_blank"> Visit Deployed Project</a>
+                    <a class='projLink' href="https://gentle-sierra-10975.herokuapp.com/" target="_blank"> Visit Deployed Project</a>
                 </div>
             </div>
         </section>

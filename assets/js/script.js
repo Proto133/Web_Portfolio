@@ -71,18 +71,18 @@ $('footer').on('click', function() {
     $(window).scrollTop(0);
 })
 
-//VANTA Background 
-VANTA.HALO({
-    el: "html",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: true,
-    minHeight: 1000.00,
-    minWidth: 200.00,
-    baseColor: 0xd90ccd,
-    backgroundColor: 0x0,
-    amplitudeFactor: 1.70,
-    xOffset: 0,
-    yOffset: 0,
-    size: 2
-})
+// //VANTA Background 
+// VANTA.HALO({
+//     el: "body",
+//     mouseControls: true,
+//     touchControls: true,
+//     gyroControls: true,
+//     minHeight: 1000.00,
+//     minWidth: 200.00,
+//     baseColor: 0xd90ccd,
+//     backgroundColor: 0x0,
+//     amplitudeFactor: 1.70,
+//     xOffset: 0,
+//     yOffset: 0,
+//     size: 2
+// })
